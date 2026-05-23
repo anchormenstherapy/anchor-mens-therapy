@@ -9,13 +9,8 @@ Static site for [anchormenstherapy.com](https://anchormenstherapy.com). Online t
 ```
 /
 ├── index.html                  Home page
-├── cities/                     One HTML file per city (~32 total)
-│   ├── toronto.html
-│   ├── vancouver.html
-│   └── …
-├── locations/
-│   ├── canada.html             Index of Canadian cities
-│   └── usa.html                Index of US cities
+├── toronto.html              Each city page lives at root — URL: /toronto
+├── vancouver.html             (and so on for ~32 cities)
 ├── resources/                  (coming) Blog cluster pages
 ├── assets/
 │   ├── site.css                Shared styles for all pages
@@ -34,13 +29,13 @@ Static site for [anchormenstherapy.com](https://anchormenstherapy.com). Online t
 
 ## Adding a new city page
 
-1. Duplicate `cities/toronto.html` → `cities/<city>.html` (lowercase, dashes for spaces, e.g. `cities/new-york.html`).
+1. Duplicate `toronto.html` → `<city>.html` (lowercase, dashes for spaces, e.g. `cities/new-york.html`).
 2. Update `<title>` and `<meta name="description">` for the new city.
 3. Find every `<span class="var">Toronto</span>` and replace `Toronto` with the new city name. The `.var` class is invisible — it just marks template anchors.
 4. Update any city-specific copy (cost of living lines, neighbourhoods, etc.) where it makes sense.
 5. Add the city to the appropriate grid in `locations/canada.html` or `locations/usa.html`:
    - Change `class="city-tile coming"` to `class="city-tile live"`
-   - Change `href="#"` to `href="/cities/<city>.html"`
+   - Change `href="#"` to `href="/<city>.html"`
    - Replace the "Coming soon" link text with "View Page" and add the `<span class="arr">→</span>`.
 
 ---
@@ -59,7 +54,7 @@ This repo is auto-deployed by Vercel on every push to `main`. No build step — 
 
 `vercel.json` turns on **clean URLs**, so:
 
-- `/cities/toronto.html` → `/cities/toronto`
+- `/toronto.html` → `/cities/toronto`
 - `/locations/canada.html` → `/locations/canada`
 
 Both forms work; the `.html` form redirects to the clean form.

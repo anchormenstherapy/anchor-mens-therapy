@@ -1187,8 +1187,16 @@
     .founder-grid { gap: 32px; }
     .founder-image-wrap {
       max-width: 220px;
-      aspect-ratio: 1/1;
+      aspect-ratio: auto;
       position: relative;
+      background: transparent;
+    }
+    .founder-image-wrap > img {
+      position: static;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      display: block;
     }
     .founder-image-wrap::after { display: none; }
     .founder-image-wrap > img { object-position: center 15%; }

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men's Therapy & Counselling in Toronto — Anchor Men's Therapy</title>
+<meta name="description" content="Online therapy for men in Toronto. Male therapists who understand the pressure of work, relationships and life transitions. Book a free consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<!-- ===========================================================
+     1. FIXED HEADER
+     React component: <SiteHeader city="Toronto" />
+     =========================================================== -->
+<header class="site" id="header" data-screen-label="01 Header">
+  <a href="#top" class="brand" aria-label="Anchor Men's Therapy home">
+    <img src="assets/logo.png" alt="Anchor Men's Therapy">
+  </a>
+  <nav class="primary" aria-label="Primary">
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#issues">Issues</a>
+    <div class="nav-item" data-nav="locations">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+        <span>Locations</span>
+        <span class="caret" aria-hidden="true"></span>
+      </button>
+      <div class="nav-dropdown" role="menu">
+        <a href="locations/canada.html" role="menuitem">
+          <span>Canadian Cities</span>
+          <span class="nav-dd-meta">CA</span>
+        </a>
+        <a href="locations/usa.html" role="menuitem">
+          <span>USA Cities</span>
+          <span class="nav-dd-meta">US</span>
+        </a>
+      </div>
+    </div>
+    <a href="#resources">Resources</a>
+  </nav>
+  <a href="https://anchormenstherapy.com/book-consultation" class="header-cta">Free Consultation</a>
+</header>
+
+<a id="top"></a>
+
+<!-- ===========================================================
+     2. HERO
+     React component: <CityHero city="Toronto" />
+     =========================================================== -->
+<section class="hero" data-screen-label="02 Hero">
+  <div class="hero-img" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-eyebrow eyebrow">Men's Therapy &nbsp;·&nbsp; <span class="var">Toronto</span></div>
+      <h1>Men's Therapy &amp; Counselling in <em><span class="var">Toronto</span></em>.</h1>
+      <p class="hero-sub"><span class="var">Toronto</span> moves fast. The pressure to perform at work, show up at home, and keep it all together doesn't leave much room to deal with what's happening underneath. If you've been carrying more than you can handle alone, you're not the only man in this city feeling that way. And you don't have to figure it out by yourself.</p>
+      <div class="hero-actions">
+        <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+        <a href="#about" class="cta outline-light"><span>How It Works</span></a>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="hero-foot-item">
+        <span class="hero-foot-label">Format</span>
+        <span class="hero-foot-val">Online <em>·</em> Canada-wide</span>
+      </div>
+      <div class="hero-foot-item">
+        <span class="hero-foot-label">Therapists</span>
+        <span class="hero-foot-val"><em>Male</em> therapists only</span>
+      </div>
+      <div class="hero-foot-item">
+        <span class="hero-foot-label">Getting started</span>
+        <span class="hero-foot-val"><em>Free</em> first consultation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     3. EMOTIONAL COPY — "IT TAKES STRENGTH TO BE HERE"
+     React component: <StrengthBlock city="Toronto" />
+     =========================================================== -->
+<section class="strength pad" id="about" data-screen-label="03 Strength">
+  <div class="strength-inner">
+    <div class="eyebrow">The reality</div>
+    <h2 class="section-title">It Takes <em>Strength</em> to Be Here.</h2>
+    <p>Most men in <span class="var">Toronto</span> don't grow up being told it's okay to ask for help. Between the demands of a competitive job market, the cost of living that keeps climbing, and the pressure to be the rock for everyone around you, something eventually has to give.</p>
+    <p>You might have noticed it as tension in your relationship, a shorter fuse than usual, difficulty sleeping, or a growing sense that you're just going through the motions. Those aren't signs of weakness. There are signs that something needs attention.</p>
+    <p>Reaching out for therapy is not a last resort. It is the first move a lot of men wish they had made years earlier. <em>You don't have to be in crisis to start.</em></p>
+  </div>
+</section>
+
+<!-- ===========================================================
+     4. ISSUES WE HELP WITH
+     React component: <IssuesGrid city="Toronto" issues={[...]} />
+     =========================================================== -->
+<section class="issues pad" id="issues" data-screen-label="04 Issues">
+  <div class="wrap">
+    <div class="issues-head">
+      <div>
+        <div class="eyebrow">Issues we help</div>
+        <h2 class="section-title">What we work on, <em>together</em>.</h2>
+      </div>
+      <p class="intro">Men in <span class="var">Toronto</span> come to us with a wide range of challenges. Some arrive in crisis. Others have just been feeling stuck for too long. Whatever brought you here, it's likely we've sat with someone in a similar situation.</p>
+    </div>
+
+    <div class="issues-section">
+      <div class="issues-section-head">
+        <h3>Relationship <em>Issues</em></h3>
+      </div>
+      <div class="issue-grid">
+        <a class="issue-card" href="https://anchormenstherapy.com/dating-and-marriage">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="issue-card-name">Dating &amp; Marriage</div>
+          <p class="issue-card-desc">Navigate the complexities of modern relationships with confidence and clarity.</p>
+          <div class="issue-card-link"><span>Explore Dating &amp; Marriage Therapy</span> <span class="arr">→</span></div>
+        </a>
+
+        <a class="issue-card" href="https://anchormenstherapy.com/break-up-and-divorce">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a4 4 0 0 0-4 4c0 4 4 7 7 11"/><path d="M15 4a4 4 0 0 1 4 4c0 4-4 7-7 11"/><path d="M10 9l3 2-2 3"/></svg>
+          </div>
+          <div class="issue-card-name">Break Up &amp; Divorce</div>
+          <p class="issue-card-desc">Process the grief, rebuild your identity, and find your footing again.</p>
+          <div class="issue-card-link"><span>Get Support for Breakup &amp; Divorce</span> <span class="arr">→</span></div>
+        </a>
+
+        <a class="issue-card" href="https://anchormenstherapy.com/fatherhood">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="6.5" r="2.5"/><path d="M4.5 21v-6.5a4.5 4.5 0 0 1 9 0V21"/><circle cx="17" cy="11" r="1.7"/><path d="M14 21v-3.5A3 3 0 0 1 17 14.5h0a3 3 0 0 1 3 3V21"/></svg>
+          </div>
+          <div class="issue-card-name">Fatherhood</div>
+          <p class="issue-card-desc">Step into fatherhood with purpose — whether you're expecting, new, or struggling.</p>
+          <div class="issue-card-link"><span>Explore Fatherhood Counselling</span> <span class="arr">→</span></div>
+        </a>
+
+        <a class="issue-card" href="https://anchormenstherapy.com/sexlessness-and-intimacy">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          </div>
+          <div class="issue-card-name">Sexlessness &amp; Intimacy</div>
+          <p class="issue-card-desc">Reconnect with your partner and rediscover physical and emotional closeness.</p>
+          <div class="issue-card-link"><span>Address Sexlessness &amp; Intimacy Issues</span> <span class="arr">→</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="issues-section">
+      <div class="issues-section-head">
+        <h3>Individual <em>Issues</em></h3>
+      </div>
+      <div class="issue-grid">
+        <a class="issue-card" href="https://anchormenstherapy.com/porn-and-other-addictions">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-3.5 2.5-5C10 9.5 11 8.5 12 3z"/><path d="M12 14a2 2 0 0 0-2 2c0 1.2 1 2 2 2s2-.8 2-2a2 2 0 0 0-2-2z"/></svg>
+          </div>
+          <div class="issue-card-name">Porn &amp; Other Addictions</div>
+          <p class="issue-card-desc">Break the cycle and reclaim your freedom from compulsive habits.</p>
+          <div class="issue-card-link"><span>Get Help for Porn &amp; Other Addictions</span> <span class="arr">→</span></div>
+        </a>
+
+        <a class="issue-card" href="https://anchormenstherapy.com/infidelity-and-sexual-compulsion">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-2-8 2v5c0 8 8 12 8 12z"/></svg>
+          </div>
+          <div class="issue-card-name">Infidelity &amp; Sexual Compulsion</div>
+          <p class="issue-card-desc">Rebuild integrity, repair trust, and understand what's underneath the behaviour.</p>
+          <div class="issue-card-link"><span>Heal from Infidelity &amp; Sexual Compulsion</span> <span class="arr">→</span></div>
+        </a>
+
+        <a class="issue-card" href="https://anchormenstherapy.com/trauma-and-stress">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5A2.5 2.5 0 0 0 6.5 7a2.5 2.5 0 0 0-2 4 2.5 2.5 0 0 0 .5 4 2.5 2.5 0 0 0 1.5 3A2.5 2.5 0 0 0 9 21V4.5z"/><path d="M15 4.5A2.5 2.5 0 0 1 17.5 7a2.5 2.5 0 0 1 2 4 2.5 2.5 0 0 1-.5 4 2.5 2.5 0 0 1-1.5 3A2.5 2.5 0 0 1 15 21V4.5z"/></svg>
+          </div>
+          <div class="issue-card-name">Trauma &amp; Stress</div>
+          <p class="issue-card-desc">Heal from the past so it stops running your present.</p>
+          <div class="issue-card-link"><span>Find Relief from Trauma &amp; Stress</span> <span class="arr">→</span></div>
+        </a>
+
+        <a class="issue-card" href="https://anchormenstherapy.com/work-life-balance">
+          <div class="issue-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.5A2.5 2.5 0 0 1 11.5 3h1A2.5 2.5 0 0 1 15 5.5V7"/><path d="M3 12h18"/></svg>
+          </div>
+          <div class="issue-card-name">Work-Life Balance</div>
+          <p class="issue-card-desc">Stop running on empty and reclaim the time and energy for what matters most.</p>
+          <div class="issue-card-link"><span>Improve Your Work-Life Balance</span> <span class="arr">→</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     5. TRANSFORMATION / OUTCOMES
+     React component: <OutcomesSplit />
+     =========================================================== -->
+<section class="outcomes pad" data-screen-label="05 Outcomes">
+  <div class="wrap">
+    <div class="outcomes-grid">
+      <div class="outcomes-image-wrap">
+        <img src="assets/lifestyle-portrait.jpeg" alt="Man finding his footing through therapy">
+      </div>
+      <div class="outcomes-text">
+        <div class="eyebrow">What changes</div>
+        <h2 class="section-title">You Don't Have to Have It <em>All Figured Out</em>.</h2>
+        <p>A lot of men in <span class="var">Toronto</span> tell us they waited too long to start. They thought they needed to hit rock bottom first, or that their problems weren't bad enough to warrant help. The truth is, therapy works best when you're ready for something to change, not when everything has already fallen apart.</p>
+        <p>That's not a fantasy. That's what happens when a man decides to do the work.</p>
+        <ul class="outcomes-list">
+          <li>Talk openly with a male therapist who gets your perspective.</li>
+          <li>Build practical strategies for the specific challenges you're facing.</li>
+          <li>Develop stronger communication and emotional awareness.</li>
+          <li>Get unstuck in the parts of your life that have been keeping you stuck.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     6. MID-PAGE CTA BAND
+     React component: <CtaBand city="Toronto" />
+     =========================================================== -->
+<section class="cta-band" data-screen-label="06 CTA Band">
+  <div class="wrap">
+    <div class="cta-band-grid">
+      <h2>Book A Free Consultation With Our <em>Male Therapists</em> in <span class="var">Toronto</span>.</h2>
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     7. FOUNDER STORY
+     React component: <FounderStory />
+     =========================================================== -->
+<section class="founder pad" data-screen-label="07 Founder">
+  <div class="wrap">
+    <div class="founder-grid">
+      <div class="founder-image-wrap">
+        <img src="assets/jordan-caron.jpg" alt="Jordan Caron, Founder of Anchor Men's Therapy">
+      </div>
+      <div class="founder-text">
+        <div class="eyebrow">Our story</div>
+        <h2 class="section-title">Why I Started Anchor <em>Men's Therapy</em>.</h2>
+        <p class="lede">Most men don't get a personal invitation to start therapy. So I built one.</p>
+        <div class="body">
+          <p>Anchor Men's Therapy was founded for two reasons.</p>
+          <h4>Personal experience</h4>
+          <p>As a man, I understand how easy it is to carry stress, pressure, and internal struggles alone. My own experience with therapy showed me how powerful the right support can be in helping regain clarity, balance, and stability.</p>
+          <h4>Professional perspective</h4>
+          <p>Through years of working closely with therapists across North America with <em>Marketing Well</em>, I observed a growing demand from men seeking help, alongside a persistent shortage of male-focused therapy options and male therapists available to support them.</p>
+          <p>Many men find comfort in speaking with professionals who closely understand the unique challenges men often face, from identity and purpose to stress, relationships, and emotional well-being.</p>
+          <p><em>Anchor Men's Therapy was created to provide that space.</em></p>
+        </div>
+        <div class="founder-sig">
+          <div class="name">Jordan Caron</div>
+          <div class="role">Founder, Anchor Men's Therapy</div>
+          <div class="founder-social" aria-label="Connect with Jordan">
+            <a href="https://jordanjcaron.com/" target="_blank" rel="noopener" aria-label="Personal site" title="jordanjcaron.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14 0 18"/><path d="M12 3c-3 3.5-3 14 0 18"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jordanjcaron/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v7.44h-4.56v-6.6c0-1.57-.03-3.6-2.19-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.72V8z"/></svg>
+            </a>
+            <a href="https://instagram.com/JordanJCaron" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+            </a>
+            <a href="https://facebook.com/jordanjcaron" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.92.26-1.55 1.58-1.55h1.68V4.27c-.29-.04-1.29-.13-2.45-.13-2.42 0-4.08 1.48-4.08 4.2v2.33H7.5V14h2.7v8h3.3z"/></svg>
+            </a>
+            <a class="founder-bio-link" href="https://anchormenstherapy.com/jordan-j-caron" target="_blank" rel="noopener"><span>View full bio</span> <span class="arr">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     8. WHY CHOOSE US
+     React component: <WhyChooseUs />
+     =========================================================== -->
+<section class="why" data-screen-label="08 Why">
+  <div class="wrap">
+    <div class="why-head">
+      <div class="eyebrow center">The Anchor difference</div>
+      <h2 class="section-title">Therapy that meets men <em>where they are</em>.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-col">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"/><path d="M5 21c0-3.87 3.13-7 7-7s7 3.13 7 7"/></svg>
+        </div>
+        <h3 class="why-title">Male Therapists Who <em>Get It</em>.</h3>
+        <p class="why-desc">Every therapist on our team is a man. So the cultural shorthand around work, fatherhood, identity and pressure doesn't need explaining from scratch.</p>
+      </div>
+      <div class="why-col">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 3v5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3 class="why-title">Confidential &amp; <em>Judgment-Free</em>.</h3>
+        <p class="why-desc">No assumptions about what you should be feeling. No corporate jargon. Just secular, evidence-based therapy in a space where you can say the things you've been holding back.</p>
+      </div>
+      <div class="why-col">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V8l8-5 8 5v12"/><path d="M9 20v-7h6v7"/></svg>
+        </div>
+        <h3 class="why-title">Built Specifically <em>for Men</em>.</h3>
+        <p class="why-desc">Our model, our clinicians, our intake. Every part of the practice was designed around how men actually engage with therapy when it's a fit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     9. THERAPIST PROFILES
+     React component: <TherapistGrid city="Toronto" therapists={[...]} />
+     =========================================================== -->
+<section class="team pad" id="locations" data-screen-label="09 Team">
+  <div class="wrap">
+    <div class="team-head">
+      <div class="eyebrow center">The team</div>
+      <h2 class="section-title">Meet Our Male Therapists &amp; Counsellors in <em><span class="var">Toronto</span></em>.</h2>
+      <p class="intro">Every therapist at Anchor Men's Therapy is male. We believe men are more likely to open up, engage, and make real progress when they feel understood by someone who shares their perspective. Our <span class="var">Toronto</span>-serving therapists specialize in the issues men actually face, from relationship strain and career pressure to addiction and emotional disconnection.</p>
+    </div>
+    <div class="team-grid">
+      <article class="therapist">
+        <div class="therapist-photo">
+          <img src="assets/james-mitchell.jpeg" alt="Dr. James Mitchell">
+        </div>
+        <div class="therapist-body">
+          <h3 class="therapist-name">Dr. James Mitchell</h3>
+          <div class="therapist-cred">Clinical Psychologist · 15 yrs</div>
+          <p class="therapist-bio">With over 15 years of experience working exclusively with men, James specializes in relationship issues, identity struggles, and helping men navigate major life transitions. His direct, no-nonsense approach makes clients feel like the work is achievable, not abstract.</p>
+        </div>
+      </article>
+      <article class="therapist">
+        <div class="therapist-photo">
+          <img src="assets/michael-torres.jpeg" alt="Michael Torres">
+        </div>
+        <div class="therapist-body">
+          <h3 class="therapist-name">Michael Torres</h3>
+          <div class="therapist-cred">MSW · Registered Social Worker</div>
+          <p class="therapist-bio">Michael brings a quiet steadiness to the room and a real talent for working with high-achieving men who feel like something is off but can't quite name it. He'll sit with you in the discomfort until you can.</p>
+        </div>
+      </article>
+      <article class="therapist">
+        <div class="therapist-photo">
+          <img src="assets/david-chen.jpeg" alt="David Chen">
+        </div>
+        <div class="therapist-body">
+          <h3 class="therapist-name">David Chen</h3>
+          <div class="therapist-cred">MA, RCC · Registered Clinical Counsellor</div>
+          <p class="therapist-bio">David's approach is grounded in practical method, not just open-ended conversation. He works extensively with anxiety, burnout and the addictive habits that show up when men don't have any other release valve.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     10. FAQ
+     React component: <FaqAccordion items={[...]} />
+     =========================================================== -->
+<section class="faq pad" data-screen-label="10 FAQ">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="eyebrow center">Common questions</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em>.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true">
+          <span>Do you offer in-person therapy in <em>Toronto</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Anchor Men's Therapy is a fully online practice. All sessions take place over secure Zoom video, which means you can meet with the right therapist for you regardless of where they live in Canada or where you happen to be that week. For men with demanding jobs, family commitments, or simply a long commute, this turns out to matter more than a physical office ever did.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How long does <em>therapy</em> take?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>It depends on what you're working on. Some men come in for a focused stretch of six to ten sessions to get a specific issue moving. Others stay longer, because they've found something useful and want to keep building on it. We'll talk openly about pacing and progress, and you're never locked in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is the free consultation <em>actually free</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes. The first consultation is a short call with a real therapist, at no cost and with no obligation. The goal is to figure out whether we're a good fit, what kind of support you're looking for, and to match you with the therapist most likely to help.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is Anchor Men's Therapy <em>religious</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>No. Our approach is secular and evidence-based. We respect whatever role faith plays in your life, but it's not a part of the work unless you bring it in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Does insurance cover <em>sessions</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Many extended health benefit plans in <span class="var">Toronto</span> cover Registered Social Workers, Registered Psychotherapists or Psychologists. Coverage varies by provider and by plan, so we recommend checking your specific policy. We provide receipts after every session that you can submit for reimbursement.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What if I've <em>never done therapy</em> before?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Most of the men we work with are first-time clients. There's nothing you need to prepare. Show up, talk about what's been on your mind, and let your therapist guide the rest. The first few sessions are mostly about getting a clear picture together, not about fixing anything yet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     11. FINAL CTA
+     React component: <FinalCta city="Toronto" />
+     =========================================================== -->
+<section class="final-cta" id="book" data-screen-label="11 Final CTA">
+  <div class="wrap-narrow">
+    <div class="dot" aria-hidden="true"></div>
+    <h2>A different <em>kind</em> of therapy, designed for men.</h2>
+    <p>If something in this page has been sitting with you, that's worth paying attention to. Book a free consultation. Speak to a real therapist. See whether this is the right fit, on your timing and your terms.</p>
+    <div class="final-cta-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+      <a href="#about" class="cta outline"><span>Learn How It Works</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     12. FOOTER
+     React component: <SiteFooter />
+     =========================================================== -->
+<footer class="site" id="resources" data-screen-label="12 Footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <img src="assets/logo.png" alt="Anchor Men's Therapy">
+        </a>
+        <p>Professional therapy and counselling specifically for men. Virtual sessions available across Canada and the United States.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#issues">Issues</a></li>
+          <li><a href="#locations">Therapists</a></li>
+          <li><a href="https://anchormenstherapy.com/book-consultation">Book a Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Men's Mental Health</a></li>
+          <li><a href="#">Anxiety Therapy</a></li>
+          <li><a href="#">Addiction Therapy</a></li>
+          <li><a href="#">Couples Counselling</a></li>
+          <li><a href="#">Stress &amp; Burnout</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h5>Canada Head Office</h5>
+        <div class="addr">477 Richmond St, #601<br>Toronto, ON M5V 3E7<br>Canada</div>
+        <div class="meta">By appointment</div>
+        <a class="email" href="/cdn-cgi/l/email-protection#751d1019191a35141b161d1a0718101b06011d100714050c5b161a18"><span class="__cf_email__" data-cfemail="38505d5454577859565b50574a555d564b4c505d4a594841165b5755">[email&#160;protected]</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Anchor Men's Therapy. All rights reserved.</div>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/site.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men's Therapy in Canada — Find Your City | Anchor Men's Therapy</title>
+<meta name="description" content="Anchor Men's Therapy serves men across Canada with online therapy and male therapists. Find your city.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  .loc-hero {
+    background: var(--paper);
+    padding: 200px 0 80px;
+    text-align: center;
+  }
+  .loc-hero .eyebrow { color: var(--navy); margin-bottom: 28px; }
+  .loc-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(46px, 6vw, 76px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    max-width: 20ch;
+    margin: 0 auto 24px;
+  }
+  .loc-hero h1 em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .loc-hero .sub {
+    max-width: 56ch;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--slate);
+  }
+  .loc-section { background: var(--cream); padding: 96px 0 140px; }
+  .loc-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .loc-meta-left .eyebrow { color: var(--navy); margin-bottom: 12px; }
+  .loc-meta h2 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.1;
+    color: var(--navy);
+  }
+  .loc-meta-right {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .city-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .city-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px 32px 32px 0;
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    text-decoration: none;
+    transition: background .25s ease;
+    min-height: 160px;
+    position: relative;
+  }
+  .city-tile:nth-child(3n) { border-right: none; padding-right: 0; }
+  .city-tile:not(:nth-child(3n)) { padding-right: 32px; }
+  .city-tile:nth-child(3n+1) { padding-left: 0; }
+  .city-tile:not(:nth-child(3n+1)) { padding-left: 32px; }
+  .city-tile:hover { background: rgba(172, 186, 196, 0.10); }
+  .city-tile.live::before {
+    content: '';
+    position: absolute;
+    top: 32px; right: 32px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent-deep);
+  }
+  .city-tile:nth-child(3n).live::before { right: 0; }
+  .city-name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.1;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .city-region {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .city-link {
+    margin-top: 22px;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--navy);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap .25s, color .25s;
+  }
+  .city-tile.coming .city-link { color: var(--mute); }
+  .city-tile.live:hover .city-link { gap: 14px; color: var(--navy-deep); }
+  .city-tile .arr { display: inline-block; transition: transform .25s; }
+  .city-tile.live:hover .arr { transform: translateX(4px); }
+
+  /* Final CTA reuse the global style — nothing extra needed */
+
+  @media (max-width: 900px) {
+    .city-grid { grid-template-columns: repeat(2, 1fr); }
+    .city-tile, .city-tile:nth-child(3n), .city-tile:not(:nth-child(3n)),
+    .city-tile:nth-child(3n+1), .city-tile:not(:nth-child(3n+1)) {
+      padding: 28px;
+      border-right: 1px solid var(--line);
+    }
+    .city-tile:nth-child(2n) { border-right: none; padding-right: 0; }
+    .city-tile:nth-child(2n+1) { padding-left: 0; }
+  }
+  @media (max-width: 560px) {
+    .city-grid { grid-template-columns: 1fr; }
+    .city-tile, .city-tile:nth-child(2n) { border-right: none; padding: 28px 0 !important; }
+    .loc-meta { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site solid" id="header" data-pin-solid data-screen-label="01 Header">
+  <a href="../index.html" class="brand" aria-label="Anchor Men's Therapy home">
+    <img src="../assets/logo.png" alt="Anchor Men's Therapy">
+  </a>
+  <nav class="primary" aria-label="Primary">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#issues">Issues</a>
+    <div class="nav-item" data-nav="locations">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+        <span>Locations</span>
+        <span class="caret" aria-hidden="true"></span>
+      </button>
+      <div class="nav-dropdown" role="menu">
+        <a href="canada.html" role="menuitem">
+          <span>Canadian Cities</span>
+          <span class="nav-dd-meta">CA</span>
+        </a>
+        <a href="usa.html" role="menuitem">
+          <span>USA Cities</span>
+          <span class="nav-dd-meta">US</span>
+        </a>
+      </div>
+    </div>
+    <a href="../index.html#resources">Resources</a>
+  </nav>
+  <a href="https://anchormenstherapy.com/book-consultation" class="header-cta">Free Consultation</a>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="loc-hero" data-screen-label="02 Locations Hero">
+  <div class="wrap">
+    <div class="eyebrow center">Locations · Canada</div>
+    <h1>Men's Therapy across <em>Canada</em>.</h1>
+    <p class="sub">All sessions are online, so you can work with the right therapist regardless of where you live. Find your city below for a page tailored to the men we serve there.</p>
+  </div>
+</section>
+
+<!-- CITY GRID -->
+<section class="loc-section" data-screen-label="03 Canadian Cities">
+  <div class="wrap">
+    <div class="loc-meta">
+      <div class="loc-meta-left">
+        <div class="eyebrow">Cities we serve</div>
+        <h2>Canadian Cities</h2>
+      </div>
+      <div class="loc-meta-right">
+        <span style="display:inline-flex;align-items:center;gap:8px;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-deep);"></span> Live</span>
+        &nbsp;&nbsp;&nbsp;
+        <span style="opacity:0.5;">○ Coming soon</span>
+      </div>
+    </div>
+
+    <div class="city-grid">
+      <!-- LIVE -->
+      <a class="city-tile live" href="../cities/toronto.html">
+        <div>
+          <div class="city-name">Toronto</div>
+          <div class="city-region">Ontario · ON</div>
+        </div>
+        <span class="city-link"><span>View Page</span> <span class="arr">→</span></span>
+      </a>
+
+      <!-- COMING SOON — replace href + remove .coming class when each page is built -->
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Vancouver</div>
+          <div class="city-region">British Columbia · BC</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Montreal</div>
+          <div class="city-region">Quebec · QC</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Calgary</div>
+          <div class="city-region">Alberta · AB</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Edmonton</div>
+          <div class="city-region">Alberta · AB</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Ottawa</div>
+          <div class="city-region">Ontario · ON</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Winnipeg</div>
+          <div class="city-region">Manitoba · MB</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Quebec City</div>
+          <div class="city-region">Quebec · QC</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Hamilton</div>
+          <div class="city-region">Ontario · ON</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Kitchener</div>
+          <div class="city-region">Ontario · ON</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">London</div>
+          <div class="city-region">Ontario · ON</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Halifax</div>
+          <div class="city-region">Nova Scotia · NS</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Victoria</div>
+          <div class="city-region">British Columbia · BC</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Mississauga</div>
+          <div class="city-region">Ontario · ON</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+      <a class="city-tile coming" href="#">
+        <div>
+          <div class="city-name">Saskatoon</div>
+          <div class="city-region">Saskatchewan · SK</div>
+        </div>
+        <span class="city-link"><span>Coming soon</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" data-screen-label="11 Final CTA">
+  <div class="wrap-narrow">
+    <div class="dot" aria-hidden="true"></div>
+    <h2>Don't see your city? <em>Book anyway</em>.</h2>
+    <p>Because every session is online, you can work with any of our therapists regardless of where you live in Canada. Book a free consultation and we'll match you with the right fit.</p>
+    <div class="final-cta-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+      <a href="usa.html" class="cta outline"><span>USA Cities</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site" data-screen-label="12 Footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <img src="../assets/logo.png" alt="Anchor Men's Therapy">
+        </a>
+        <p>Professional therapy and counselling specifically for men. Virtual sessions available across Canada and the United States.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="canada.html">Canadian Cities</a></li>
+          <li><a href="usa.html">USA Cities</a></li>
+          <li><a href="https://anchormenstherapy.com/book-consultation">Book a Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Men's Mental Health</a></li>
+          <li><a href="#">Anxiety Therapy</a></li>
+          <li><a href="#">Addiction Therapy</a></li>
+          <li><a href="#">Couples Counselling</a></li>
+          <li><a href="#">Stress &amp; Burnout</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h5>Canada Head Office</h5>
+        <div class="addr">477 Richmond St, #601<br>Toronto, ON M5V 3E7<br>Canada</div>
+        <div class="meta">By appointment</div>
+        <a class="email" href="mailto:hello@anchormenstherapy.com">hello@anchormenstherapy.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Anchor Men's Therapy. All rights reserved.</div>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

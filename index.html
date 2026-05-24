@@ -12,35 +12,73 @@
 <style>
   /* Home-specific overrides for the locations grid sections */
   .home-hero {
-    background: var(--paper);
+    position: relative;
+    min-height: 720px;
     padding: 200px 0 96px;
     text-align: center;
-    position: relative;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
   }
-  .home-hero .eyebrow { color: var(--navy); margin-bottom: 28px; }
+  .home-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      url('assets/homepage-hero.webp') center 40% / cover no-repeat,
+      linear-gradient(135deg, #2a2f44 0%, #3b4566 60%, #565f7a 100%);
+    background-color: var(--navy-deep);
+    z-index: -2;
+  }
+  .home-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(35,40,57,0.78) 0%, rgba(35,40,57,0.55) 35%, rgba(35,40,57,0.58) 65%, rgba(35,40,57,0.82) 100%),
+      linear-gradient(90deg, rgba(35,40,57,0.30) 0%, rgba(35,40,57,0) 35%, rgba(35,40,57,0) 65%, rgba(35,40,57,0.30) 100%);
+  }
+  .home-hero .wrap { position: relative; z-index: 1; }
+  .home-hero .eyebrow {
+    color: var(--cream-soft);
+    opacity: 0.9;
+    margin-bottom: 28px;
+  }
+  .home-hero .eyebrow::before { background: var(--cream-soft); opacity: 0.7; }
   .home-hero h1 {
     font-family: var(--serif);
     font-weight: 300;
-    font-size: clamp(46px, 6vw, 80px);
+    font-size: clamp(46px, 6vw, 84px);
     line-height: 1.04;
     letter-spacing: -0.02em;
-    color: var(--navy);
+    color: var(--cream-soft);
     max-width: 18ch;
     margin: 0 auto 28px;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.25);
   }
-  .home-hero h1 em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .home-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
   .home-hero .sub {
     max-width: 58ch;
     margin: 0 auto 40px;
     font-size: 17px;
     line-height: 1.75;
-    color: var(--slate);
+    color: var(--cream-soft);
+    opacity: 0.92;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.25);
   }
   .home-hero-actions {
     display: flex;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .home-hero-actions .cta.outline {
+    border-color: rgba(246, 244, 227, 0.45);
+    color: var(--cream-soft);
+  }
+  .home-hero-actions .cta.outline:hover {
+    background: var(--cream-soft);
+    color: var(--navy-deep);
+    border-color: var(--cream-soft);
   }
 
   .home-stats {
@@ -49,7 +87,7 @@
     gap: 48px;
     margin-top: 64px;
     padding-top: 48px;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid rgba(246, 244, 227, 0.22);
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +102,7 @@
     font-style: italic;
     font-size: 38px;
     line-height: 1;
-    color: var(--navy);
+    color: var(--cream-soft);
     margin-bottom: 8px;
   }
   .home-stat-label {
@@ -72,7 +110,8 @@
     font-size: 10px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--slate);
+    color: var(--cream-soft);
+    opacity: 0.75;
   }
 
   .loc-section { background: var(--cream); padding: 96px 0 64px; }
@@ -201,9 +240,12 @@
     }
     .city-tile.live::before { right: 0 !important; }
     .loc-meta { flex-direction: column; align-items: flex-start; }
-    .home-hero { padding: 140px 0 64px; }
+    .home-hero { padding: 140px 0 80px; min-height: 600px; }
     .home-hero h1 { font-size: 42px; }
     .home-hero .sub { font-size: 15.5px; }
+    .home-hero-bg {
+      background-position: center 35%;
+    }
     .home-stats { gap: 32px; margin-top: 48px; padding-top: 32px; }
     .home-stat-num { font-size: 30px; }
   }
@@ -218,6 +260,7 @@
 
 <!-- HERO -->
 <section class="home-hero" data-screen-label="01 Home Hero">
+  <div class="home-hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="eyebrow center">Online therapy &nbsp;·&nbsp; for men only</div>
     <h1>Therapy &amp; Counselling, designed <em>for men</em>.</h1>

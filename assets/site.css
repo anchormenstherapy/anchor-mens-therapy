@@ -809,82 +809,80 @@
 
   /* ===========================================================
      SECTION 07 — FOUNDER STORY
+     Dead-simple single-column layout. Image fills container, text below.
+     Same shape at every screen size.
      =========================================================== */
   .founder { background: var(--paper); }
   .founder-grid {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 100px;
-    align-items: start;
+    display: block;
+    max-width: 720px;
+    margin: 0 auto;
   }
   .founder-image-wrap {
-    position: sticky;
-    top: 120px;
-    aspect-ratio: 4/5;
+    width: 100%;
+    margin: 0 0 48px;
+    aspect-ratio: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
     background: var(--cream);
-    overflow: visible;
   }
   .founder-image-wrap > img {
-    position: absolute;
-    inset: 0;
+    position: static !important;
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center 20%;
   }
-  .founder-image-wrap::after {
-    content: '';
-    position: absolute;
-    left: -28px; top: -28px;
-    width: 72px; height: 72px;
-    border: 1px solid var(--accent-deep);
-    background: var(--paper);
-  }
-  .founder-text .eyebrow { color: var(--navy); margin-bottom: 24px; }
-  .founder-text .section-title { margin-bottom: 40px; max-width: 18ch; }
+  .founder-image-wrap::after { content: none !important; display: none !important; }
+  .founder-text { width: 100%; }
+  .founder-text .eyebrow { color: var(--navy); margin-bottom: 18px; }
+  .founder-text .section-title { margin-bottom: 32px; max-width: 22ch; }
   .founder-text .lede {
     font-family: var(--serif);
-    font-size: 22px;
-    line-height: 1.45;
-    color: var(--navy-light);
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--ink);
     font-style: italic;
     font-weight: 400;
-    margin-bottom: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
     border-bottom: 1px solid var(--line);
-    max-width: 28ch;
+    max-width: 36ch;
   }
   .founder-text .body p {
-    font-size: 15.5px;
+    font-size: 16px;
     line-height: 1.85;
     color: var(--slate);
-    max-width: 44ch;
   }
   .founder-text .body p + p { margin-top: 18px; }
   .founder-text .body p em {
     font-family: var(--serif);
     font-style: italic;
-    font-size: 17px;
+    font-weight: 500;
     color: var(--ink);
   }
   .founder-text h4 {
     font-family: var(--mono);
     font-size: 10px;
-    letter-spacing: 0.24em;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--navy);
-    margin: 36px 0 12px;
+    margin-top: 32px;
+    margin-bottom: 12px;
     font-weight: 500;
   }
   .founder-sig {
-    margin-top: 48px;
+    margin-top: 40px;
     padding-top: 32px;
     border-top: 1px solid var(--line);
   }
   .founder-sig .name {
     font-family: var(--serif);
     font-style: italic;
-    font-size: 26px;
+    font-weight: 500;
+    font-size: 22px;
     color: var(--navy);
     line-height: 1.2;
   }
@@ -899,7 +897,7 @@
   .founder-social {
     display: flex;
     gap: 10px;
-    margin-top: 24px;
+    margin-top: 22px;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -907,9 +905,7 @@
     width: 36px; height: 36px;
     border-radius: 50%;
     border: 1px solid var(--line);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     color: var(--navy);
     text-decoration: none;
     transition: background .2s, color .2s, border-color .2s;
@@ -920,22 +916,23 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-left: 14px;
-    padding: 9px 0;
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.22em;
+    margin-left: auto;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
     text-transform: uppercase;
     color: var(--navy);
     text-decoration: none;
     border-bottom: 1px solid var(--line);
+    padding-bottom: 4px;
     transition: border-color .2s, color .2s;
   }
   .founder-bio-link:hover { color: var(--navy-deep); border-color: var(--navy); }
   .founder-bio-link .arr { transition: transform .25s; }
   .founder-bio-link:hover .arr { transform: translateX(3px); }
 
-  /* ===========================================================
+/* ===========================================================
      SECTION 08 — WHY CHOOSE US (3-COLUMN CREAM)
      =========================================================== */
   .why { background: var(--cream); padding: 140px 0; }

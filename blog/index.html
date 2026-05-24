@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Anchor Men's Therapy</title>
+<meta name="description" content="Insights, stories, and practical advice for men navigating life's toughest moments. Read the Anchor Men's Therapy blog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+
+<style>
+  /* ===========================================================
+     PAGE-SPECIFIC: BLOG INDEX
+     =========================================================== */
+
+  /* ---------- Hero ---------- */
+  .blog-hero {
+    background: var(--navy-deep);
+    padding: 180px 0 72px;
+    text-align: center;
+  }
+  .blog-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(42px, 5.6vw, 68px);
+    line-height: 1.06;
+    letter-spacing: -0.022em;
+    color: var(--cream-soft);
+    margin: 0 auto 16px;
+  }
+  .blog-hero .sub {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--accent);
+    font-weight: 400;
+    max-width: 52ch;
+    margin: 0 auto;
+  }
+
+  /* ---------- Post grid ---------- */
+  .blog-grid-section {
+    background: var(--paper);
+    padding: 96px 0 120px;
+  }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  /* ---------- Post card ---------- */
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--line-soft);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform .35s ease, box-shadow .35s ease;
+    background: var(--white);
+  }
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(35,40,57,0.10);
+  }
+  .blog-card-img {
+    aspect-ratio: 16/10;
+    overflow: hidden;
+  }
+  .blog-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+  }
+  .blog-card:hover .blog-card-img img {
+    transform: scale(1.05);
+  }
+  .blog-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .blog-card-cat {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .blog-card-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.35;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .blog-card-excerpt {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--slate);
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .blog-card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .blog-card-date {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .blog-card-arrow {
+    width: 16px;
+    height: 16px;
+    color: var(--accent-deep);
+    transition: color .2s, transform .2s;
+  }
+  .blog-card:hover .blog-card-arrow {
+    color: var(--navy);
+    transform: translateX(3px);
+  }
+
+  @media (max-width: 1024px) {
+    .blog-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  }
+  @media (max-width: 640px) {
+    .blog-hero { padding: 140px 0 56px; }
+    .blog-grid-section { padding: 64px 0 80px; }
+    .blog-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Shared header injects into this slot -->
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- ===========================================================
+     1. HERO
+     =========================================================== -->
+<section class="blog-hero" data-screen-label="01 Hero">
+  <div class="wrap">
+    <h1>The Anchor Blog</h1>
+    <p class="sub">Insights, stories, and practical advice for men navigating life's toughest moments.</p>
+  </div>
+</section>
+
+<!-- ===========================================================
+     2. POST GRID
+     =========================================================== -->
+<section class="blog-grid-section" data-screen-label="02 Posts">
+  <div class="wrap">
+    <div class="blog-grid">
+
+      <!-- Post 1 -->
+      <a href="/blog/online-therapy-effective-for-men" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-online-therapy-effective-for-men.jpg" alt="Is Online Therapy Actually Effective for Men?">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Mental Health</div>
+          <h2 class="blog-card-title">Is Online Therapy Actually Effective for Men? What the Research Says</h2>
+          <p class="blog-card-excerpt">Research shows that for many men, online therapy is not just effective, it actually leads to better outcomes than in person sessions.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 31, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 2 -->
+      <a href="/blog/male-therapist-vs-female-therapist-for-men" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-male-therapist-vs-female-therapist.jpg" alt="Why Working With a Male Therapist Makes a Difference">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Mental Health</div>
+          <h2 class="blog-card-title">Why Working With a Male Therapist Makes a Difference</h2>
+          <p class="blog-card-excerpt">Female therapists can help men, many excel at it. But sharing masculinity with your therapist can break down barriers and speed up progress.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 24, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 3 -->
+      <a href="/blog/deal-with-anger-as-a-man" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-deal-with-anger-as-a-man.jpg" alt="How to Deal With Anger as a Man">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Mental Health</div>
+          <h2 class="blog-card-title">How to Deal With Anger as a Man (Without Destroying Your Relationships)</h2>
+          <p class="blog-card-excerpt">You don't have an anger problem. At least, that's what you tell yourself. You're just stressed. You're under a lot of pressure.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 21, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 4 -->
+      <a href="/blog/first-therapy-session-for-men" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-first-therapy-session-for-men.jpg" alt="What to Expect in Your First Therapy Session as a Man">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Mental Health</div>
+          <h2 class="blog-card-title">What to Expect in Your First Therapy Session as a Man</h2>
+          <p class="blog-card-excerpt">You're unsure what to say or what might be asked. You might expect awkwardness, or imagine lying on a couch while a stranger analyzes you.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 19, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 5 -->
+      <a href="/blog/divorce-and-mens-mental-health" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-divorce-and-mens-mental-health.jpg" alt="Divorce and Men's Mental Health">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Relationships</div>
+          <h2 class="blog-card-title">Divorce and Men's Mental Health: What Nobody Tells You</h2>
+          <p class="blog-card-excerpt">Divorce is one of the most disorienting experiences a man can go through — not just legally or financially, but psychologically.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 24, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 6 -->
+      <a href="/blog/signs-your-marriage-is-in-trouble" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-signs-your-marriage-is-in-trouble.jpg" alt="Signs Your Marriage Is in Trouble">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Relationships</div>
+          <h2 class="blog-card-title">Signs Your Marriage Is in Trouble (And What to Do Before It's Too Late)</h2>
+          <p class="blog-card-excerpt">Most marriages don't collapse overnight. They erode. Slowly, quietly, in ways that are easy to dismiss until the damage is too deep.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 21, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 7 -->
+      <a href="/blog/why-men-avoid-therapy" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-why-men-avoid-therapy.jpg" alt="Why Men Avoid Therapy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Mental Health</div>
+          <h2 class="blog-card-title">Why Men Avoid Therapy (And What Actually Gets Them Through the Door)</h2>
+          <p class="blog-card-excerpt">Most men who need therapy don't go. Not because they don't want to feel better, but because everything about the process feels like it wasn't built for them.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Mar 17, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 8 -->
+      <a href="/blog/porn-recovery-group-quiz" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-porn-recovery-group-quiz.jpg" alt="Porn Recovery Group Quiz">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">Is a Porn Recovery Group Right for You? A Quick Self-Assessment</h2>
+          <p class="blog-card-excerpt">You've been thinking about it. Maybe you've searched for it late at night. A recovery group. Something structured. Something real.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 21, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 9 -->
+      <a href="/blog/weekly-porn-recovery-meetings-create-lasting-change" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-weekly-porn-recovery-meetings.jpg" alt="Weekly Porn Recovery Meetings">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">How Weekly Porn Recovery Meetings Create Lasting Change</h2>
+          <p class="blog-card-excerpt">Recovery doesn't happen in a single conversation. It happens through consistency, accountability, and a space where you can be honest week after week.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 20, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 10 -->
+      <a href="/blog/anonymous-online-support-weekly-recovery-groups" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-anonymous-online-support.jpg" alt="Anonymous Online Support vs. Recovery Groups">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">Anonymous Online Support vs. Real Weekly Recovery Groups: What Works Better?</h2>
+          <p class="blog-card-excerpt">There's a significant difference between anonymous online support and a real recovery group. And understanding that difference matters.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 19, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 11 -->
+      <a href="/blog/what-happens-porn-recovery-group" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-what-happens-porn-recovery-group.jpg" alt="Porn Addiction Support Groups">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">Porn Addiction Support Groups: What Actually Happens in the Room</h2>
+          <p class="blog-card-excerpt">Let me walk you through what a typical recovery group meeting looks like, answer the questions that are probably keeping you from joining.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 18, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 12 -->
+      <a href="/blog/shame-porn-cycle" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-shame-porn-cycle.jpg" alt="The Shame Cycle">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">The Shame Cycle: Why Hiding Your Porn Use Makes It Worse</h2>
+          <p class="blog-card-excerpt">There's a particular kind of exhaustion that comes from living a double life. Not the physical tiredness from lack of sleep, though that's part of it.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 17, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 13 -->
+      <a href="/blog/failed-attempts-porn-addiction-recovery" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-failed-attempts-porn-addiction.jpg" alt="47 Failed Attempts at Porn Addiction Recovery">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">What 47 Failed Attempts Taught Me About Porn Addiction Recovery</h2>
+          <p class="blog-card-excerpt">I didn't actually count to 47. To be honest, it was probably more. But somewhere around attempt number 30-something, I stopped counting.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 15, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 14 -->
+      <a href="/blog/signs-help-with-porn-addiction" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-signs-help-with-porn-addiction.jpg" alt="Signs You Need Help with Porn Addiction">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">Signs You Need Help with Porn Addiction</h2>
+          <p class="blog-card-excerpt">There's a question you've probably asked yourself more times than you can count: "Is this actually a problem, or am I overreacting?"</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 14, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 15 -->
+      <a href="/blog/porn-addiction-isolating" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../assets/blog-porn-addiction-isolating.jpg" alt="Why Porn Addiction Feels So Isolating">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Addiction</div>
+          <h2 class="blog-card-title">Why Porn Addiction Feels So Isolating (And Why That Keeps You Stuck)</h2>
+          <p class="blog-card-excerpt">You've tried to quit before. Maybe dozens of times. And every time, it feels like you're fighting this battle completely alone.</p>
+          <div class="blog-card-foot">
+            <span class="blog-card-date">Feb 14, 2026</span>
+            <svg class="blog-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Shared footer injects into this slot -->
+<div id="site-footer"></div>
+
+<script>
+  (function () {
+    if (location.hostname === 'anchormenstherapy.com') return;
+    new MutationObserver(() => {
+      document.querySelectorAll('img[src^="/assets/"], link[href^="/assets/"]').forEach(el => {
+        const attr = el.tagName === 'LINK' ? 'href' : 'src';
+        el.setAttribute(attr, el.getAttribute(attr).replace(/^\/assets\//, '../assets/'));
+      });
+    }).observe(document.documentElement, { subtree: true, childList: true });
+  })();
+</script>
+<script src="../assets/header.js?v=8" defer></script>
+<script src="../assets/footer.js?v=8" defer></script>
+
+</body>
+</html>

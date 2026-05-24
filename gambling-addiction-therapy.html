@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gambling Addiction Therapy for Men — Online &amp; In-Person Treatment — Anchor Men's Therapy</title>
+<meta name="description" content="Specialized gambling addiction therapy for men. Confidential, evidence-based, judgment-free support. Online and in-person therapists across the USA and Canada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<style>
+  /* ===========================================================
+     PAGE-SPECIFIC: PORN ADDICTION THERAPY HUB
+     =========================================================== */
+
+  /* ---------- Hero (image background, centered) ---------- */
+  .issue-hero {
+    position: relative;
+    min-height: 640px;
+    padding: 200px 0 96px;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+  }
+  .issue-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: var(--navy-deep);
+    background-image: url('assets/gambling-addiction-hero.jpeg');
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+  }
+  .issue-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg,
+        rgba(35,40,57,0.70) 0%,
+        rgba(35,40,57,0.42) 35%,
+        rgba(35,40,57,0.55) 65%,
+        rgba(35,40,57,0.86) 100%);
+  }
+  .issue-hero .wrap { position: relative; z-index: 1; max-width: 1100px; }
+  .issue-hero .eyebrow {
+    color: var(--cream-soft);
+    opacity: 0.85;
+    margin-bottom: 28px;
+    justify-content: center;
+  }
+  .issue-hero .eyebrow::before,
+  .issue-hero .eyebrow::after {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+  .issue-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(46px, 6.4vw, 84px);
+    line-height: 1.02;
+    letter-spacing: -0.022em;
+    color: var(--cream-soft);
+    max-width: 22ch;
+    margin: 0 auto 26px;
+  }
+  .issue-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .issue-hero .sub {
+    max-width: 60ch;
+    margin: 0 auto 44px;
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--cream-soft);
+    opacity: 0.92;
+    font-weight: 300;
+  }
+  .issue-hero-actions {
+    display: inline-flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .issue-hero-actions .cta {
+    background: var(--cream-soft);
+    color: var(--navy-deep);
+    border-color: var(--cream-soft);
+  }
+  .issue-hero-actions .cta:hover { background: var(--accent); border-color: var(--accent); }
+  .issue-hero-actions .cta.outline-light:hover { color: var(--navy-deep); }
+
+  /* ---------- Why Men Choose — 4-card grid ---------- */
+  .why-choose { background: var(--paper); padding: 140px 0; }
+  .why-choose-head { text-align: center; margin-bottom: 88px; }
+  .why-choose-head .eyebrow { color: var(--navy); margin-bottom: 22px; }
+  .why-choose-head .section-title { max-width: 22ch; margin: 0 auto; }
+  .why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--navy);
+    border-left: 1px solid var(--navy);
+  }
+  .why-choose-cell {
+    padding: 48px 44px;
+    border-right: 1px solid rgba(48, 54, 79, 0.16);
+    border-bottom: 1px solid rgba(48, 54, 79, 0.16);
+    background: var(--paper);
+    position: relative;
+  }
+  .why-choose-cell:nth-child(2n) { border-right: 1px solid var(--navy); }
+  .why-choose-cell:nth-last-child(-n+2) { border-bottom: 1px solid var(--navy); }
+  .why-choose-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .why-choose-num::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+  .why-choose-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.18;
+    color: var(--navy);
+    margin-bottom: 18px;
+    max-width: 18ch;
+  }
+  .why-choose-title em { color: var(--accent-deep); }
+  .why-choose-desc {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--slate);
+    max-width: 38ch;
+  }
+
+  /* ---------- City Directory ---------- */
+  .cities { background: var(--cream); padding: 140px 0; }
+  .cities-head { text-align: center; margin-bottom: 80px; }
+  .cities-head .eyebrow { color: var(--navy); margin-bottom: 22px; }
+  .cities-head .section-title { max-width: 22ch; margin: 0 auto 22px; }
+  .cities-head .intro {
+    max-width: 52ch;
+    margin: 0 auto;
+    font-size: 15.5px;
+    line-height: 1.8;
+    color: var(--slate);
+  }
+  .cities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .cities-col-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--navy);
+  }
+  .cities-flag {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--navy);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+  }
+  .cities-flag svg { width: 14px; height: 14px; }
+  .cities-col-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+  .cities-col-count {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .cities-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .city-link {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 16px;
+    border-top: 1px solid var(--line-soft);
+    text-decoration: none;
+    color: inherit;
+    transition: background .2s, padding .2s;
+  }
+  .city-link:first-child { border-top: none; }
+  .city-link:hover { background: var(--paper); padding-left: 24px; }
+  .city-name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .city-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .city-link .arr {
+    display: inline-flex;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    transition: background .2s, color .2s, transform .2s, border-color .2s;
+    flex-shrink: 0;
+  }
+  .city-link .arr svg { width: 11px; height: 11px; }
+  .city-link:hover .arr { background: var(--navy); color: var(--cream-soft); border-color: var(--navy); transform: translateX(4px); }
+  .city-row-inner { display: flex; flex-direction: column; gap: 2px; }
+
+  /* ---------- Var placeholder ---------- */
+  .var {
+    display: inline-block;
+    background: rgba(172, 186, 196, 0.16);
+    border-bottom: 1px dashed rgba(48, 54, 79, 0.32);
+    padding: 0 4px;
+    border-radius: 2px;
+  }
+
+  /* ---------- Responsive overrides ---------- */
+  @media (max-width: 1024px) {
+    .cities-grid { grid-template-columns: 1fr; gap: 56px; }
+    .why-choose-cell:nth-child(2n) { border-right: 1px solid rgba(48,54,79,0.16); }
+  }
+  @media (max-width: 640px) {
+    .issue-hero { padding: 140px 0 64px; min-height: 540px; }
+    .why-choose { padding: 88px 0; }
+    .why-choose-grid { grid-template-columns: 1fr; border-left: none; }
+    .why-choose-cell { padding: 36px 0; border-right: none !important; border-bottom: 1px solid rgba(48,54,79,0.16); }
+    .why-choose-cell:last-child { border-bottom: 1px solid var(--navy); }
+    .cities { padding: 88px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Shared header injects into this slot -->
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- ===========================================================
+     1. HERO
+     =========================================================== -->
+<section class="issue-hero" data-screen-label="01 Hero">
+  <div class="issue-hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">Therapy for Men &nbsp;&middot;&nbsp; Gambling Addiction</div>
+    <h1>Gambling Addiction Therapy for Men <em>Ready to Change</em>.</h1>
+    <p class="sub">Compulsive gambling can devastate your finances, relationships, and mental health. Our therapists provide specialized, judgment-free support to help you understand the patterns driving your behavior and build a path toward lasting recovery.</p>
+    <div class="issue-hero-actions">
+      <a href="#cities" class="cta"><span>Find Therapy In Your Area</span> <span class="arr">&rarr;</span></a>
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta outline-light"><span>Book A Free Consultation</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     2. WHY MEN CHOOSE — 4-CARD GRID
+     =========================================================== -->
+<section class="why-choose" id="issues" data-screen-label="02 Why Men Choose">
+  <div class="wrap">
+    <div class="why-choose-head">
+      <div class="eyebrow center">Your recovery matters</div>
+      <h2 class="section-title">Why Men Trust Our <em>Gambling Addiction Therapy</em>.</h2>
+    </div>
+
+    <div class="why-choose-grid">
+      <div class="why-choose-cell">
+        <div class="why-choose-num">01 / Approach</div>
+        <h3 class="why-choose-title">No Judgment, <em>Just Support</em>.</h3>
+        <p class="why-choose-desc">We understand that gambling addiction is a mental health issue, not a moral failing. Our therapists create a safe space to explore what's driving your behavior — without shame or lectures.</p>
+      </div>
+
+      <div class="why-choose-cell">
+        <div class="why-choose-num">02 / Method</div>
+        <h3 class="why-choose-title">Proven Treatment <em>Methods</em>.</h3>
+        <p class="why-choose-desc">We use evidence-based approaches like CBT to help you identify triggers, develop healthy coping strategies, and rebuild financial stability over time.</p>
+      </div>
+
+      <div class="why-choose-cell">
+        <div class="why-choose-num">03 / Format</div>
+        <h3 class="why-choose-title">In-Person <em>or Online</em>.</h3>
+        <p class="why-choose-desc">Access specialized gambling addiction therapy through secure telehealth sessions or in-person appointments in your city. You choose what works for your life.</p>
+      </div>
+
+      <div class="why-choose-cell">
+        <div class="why-choose-num">04 / Focus</div>
+        <h3 class="why-choose-title">Built <em>for Men</em>.</h3>
+        <p class="why-choose-desc">Our therapists understand the specific challenges men face with compulsive gambling: financial pressure, secrecy, and shame. We tailor treatment accordingly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     3. CITY DIRECTORY
+     =========================================================== -->
+<section class="cities" id="cities" data-screen-label="03 Cities">
+  <div class="wrap">
+    <div class="cities-head">
+      <div class="eyebrow center">Find local support</div>
+      <h2 class="section-title">Gambling Addiction Therapy <em>in Your City</em>.</h2>
+      <p class="intro">In-person and online therapy available across the USA and Canada. Click a city to see local availability and book a free consultation with a male therapist near you.</p>
+    </div>
+
+    <div class="cities-grid">
+      <!-- USA -->
+      <div class="cities-col">
+        <div class="cities-col-head">
+          <div class="cities-flag" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M3 12h18"></path>
+              <path d="M12 3c3 3.5 3 14 0 18"></path>
+              <path d="M12 3c-3 3.5-3 14 0 18"></path>
+            </svg>
+          </div>
+          <h3 class="cities-col-title">United States</h3>
+          <span class="cities-col-count">16 Cities</span>
+        </div>
+        <ul class="cities-list">
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-anchorage">
+            <div class="city-row-inner"><span class="city-name">Anchorage</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-chandler">
+            <div class="city-row-inner"><span class="city-name">Chandler</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-chicago">
+            <div class="city-row-inner"><span class="city-name">Chicago</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-columbus">
+            <div class="city-row-inner"><span class="city-name">Columbus</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-dallas">
+            <div class="city-row-inner"><span class="city-name">Dallas</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-houston">
+            <div class="city-row-inner"><span class="city-name">Houston</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-indianapolis">
+            <div class="city-row-inner"><span class="city-name">Indianapolis</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-jacksonville">
+            <div class="city-row-inner"><span class="city-name">Jacksonville</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-los-angeles">
+            <div class="city-row-inner"><span class="city-name">Los Angeles</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-madison">
+            <div class="city-row-inner"><span class="city-name">Madison</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-new-york-city">
+            <div class="city-row-inner"><span class="city-name">New York City</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-philadelphia">
+            <div class="city-row-inner"><span class="city-name">Philadelphia</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-phoenix">
+            <div class="city-row-inner"><span class="city-name">Phoenix</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-reno">
+            <div class="city-row-inner"><span class="city-name">Reno</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-san-antonio">
+            <div class="city-row-inner"><span class="city-name">San Antonio</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-san-diego">
+            <div class="city-row-inner"><span class="city-name">San Diego</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- CANADA -->
+      <div class="cities-col">
+        <div class="cities-col-head">
+          <div class="cities-flag" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3l1.5 4 4 .5-3 3 1 4-3.5-2.2-3.5 2.2 1-4-3-3 4-.5z"></path>
+              <line x1="12" y1="15" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="cities-col-title">Canada</h3>
+          <span class="cities-col-count">16 Cities</span>
+        </div>
+        <ul class="cities-list">
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-burnaby">
+            <div class="city-row-inner"><span class="city-name">Burnaby</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-calgary">
+            <div class="city-row-inner"><span class="city-name">Calgary</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-edmonton">
+            <div class="city-row-inner"><span class="city-name">Edmonton</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-halifax">
+            <div class="city-row-inner"><span class="city-name">Halifax</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-hamilton">
+            <div class="city-row-inner"><span class="city-name">Hamilton</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-london">
+            <div class="city-row-inner"><span class="city-name">London</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-markham">
+            <div class="city-row-inner"><span class="city-name">Markham</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-mississauga">
+            <div class="city-row-inner"><span class="city-name">Mississauga</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-montreal">
+            <div class="city-row-inner"><span class="city-name">Montreal</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-ottawa">
+            <div class="city-row-inner"><span class="city-name">Ottawa</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-saskatoon">
+            <div class="city-row-inner"><span class="city-name">Saskatoon</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-toronto">
+            <div class="city-row-inner"><span class="city-name">Toronto</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-vancouver">
+            <div class="city-row-inner"><span class="city-name">Vancouver</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-vaughan">
+            <div class="city-row-inner"><span class="city-name">Vaughan</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-victoria">
+            <div class="city-row-inner"><span class="city-name">Victoria</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+          <li><a class="city-link" href="https://anchormenstherapy.com/gambling-addiction-therapy-winnipeg">
+            <div class="city-row-inner"><span class="city-name">Winnipeg</span><span class="city-meta">Gambling addiction therapy available</span></div>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     4. FOUNDER STORY
+     =========================================================== -->
+<section class="founder pad" data-screen-label="04 Founder">
+  <div class="wrap">
+    <div class="founder-grid">
+      <div class="founder-image-wrap">
+        <img src="assets/jordan-caron.jpg" alt="Jordan Caron, Founder of Anchor Men's Therapy">
+      </div>
+      <div class="founder-text">
+        <div class="eyebrow">Our story</div>
+        <h2 class="section-title">Why I Started Anchor <em>Men's Therapy</em>.</h2>
+        <p class="lede">About Jordan J. Caron &rarr;</p>
+        <div class="body">
+          <p>I've sat across from men who've lost their savings, destroyed their credit, lied to their families, and felt trapped in a cycle they couldn't break. The shame and secrecy that accompanies gambling addiction often prevents men from seeking help until they've hit rock bottom.</p>
+          <p>What I've learned is that gambling addiction isn't about willpower or character — it's a mental health condition driven by underlying patterns of stress, avoidance, and dysregulated dopamine responses. Like other compulsive behaviors, it often serves as a way to escape difficult emotions or cope with unmet needs.</p>
+          <p>Today, gambling has become more accessible and more aggressively marketed than ever. With the rise of legalized online betting platforms, constant advertising, and betting integrated directly into sports broadcasts, many men find themselves caught in patterns they never intended to develop.</p>
+          <p>Through evidence-based treatment approaches like CBT, men can identify the triggers that drive their gambling, develop healthier coping mechanisms, and rebuild their financial and relational stability. Recovery is possible, and it starts with reaching out.</p>
+          <p>At Anchor Men's Therapy, we provide specialized, judgment-free support for men ready to break free from compulsive gambling and regain control of their lives.</p>
+          <p><em>Because you don't have to face this alone.</em></p>
+        </div>
+        <div class="founder-sig">
+          <div class="name">Jordan J. Caron</div>
+          <div class="role">Founder, Anchor Men's Therapy</div>
+          <div class="founder-social" aria-label="Connect with Jordan">
+            <a href="https://jordanjcaron.com/" target="_blank" rel="noopener" aria-label="Personal site" title="jordanjcaron.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c3 3.5 3 14 0 18"></path><path d="M12 3c-3 3.5-3 14 0 18"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jordanjcaron/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v7.44h-4.56v-6.6c0-1.57-.03-3.6-2.19-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.72V8z"></path></svg>
+            </a>
+            <a href="https://instagram.com/JordanJCaron" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg>
+            </a>
+            <a href="https://facebook.com/jordanjcaron" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.92.26-1.55 1.58-1.55h1.68V4.27c-.29-.04-1.29-.13-2.45-.13-2.42 0-4.08 1.48-4.08 4.2v2.33H7.5V14h2.7v8h3.3z"></path></svg>
+            </a>
+            <a class="founder-bio-link" href="https://anchormenstherapy.com/jordan-j-caron" target="_blank" rel="noopener"><span>View full bio</span> <span class="arr">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     5. CTA BAND
+     =========================================================== -->
+<section class="cta-band" data-screen-label="05 CTA Band">
+  <div class="wrap">
+    <div class="cta-band-grid">
+      <h2>Ready to Take the <em>First Step</em>?</h2>
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book Your Free Consultation</span> <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     6. FAQ
+     =========================================================== -->
+<section class="faq pad" data-screen-label="06 FAQ">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="eyebrow center">Common questions</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em>.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true">
+          <span>How do I know if I have a <em>gambling problem</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Common signs include: chasing losses, lying to family about money or time spent gambling, gambling to escape stress or negative emotions, borrowing money to gamble or pay debts, failed attempts to cut back, and feeling shame or anxiety around your habit. If gambling is affecting your finances, relationships, or mental health, therapy can help.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What if I'm not ready to fully commit to <em>stopping gambling</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>That's completely okay — and honestly, very common. You don't have to arrive at therapy with a decision already made. Many men start by simply exploring their relationship with gambling and what it's really doing for them. Clarity usually comes before commitment, not the other way around.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How do I know if my gambling is <em>really a problem</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>A simple test: would the people closest to you be surprised by the truth about your gambling? If you're hiding amounts, frequency, or losses, that itself is a signal. Problem gambling is defined less by how much you wager and more by the impact it's having on your life, your finances, and the people around you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is online gambling addiction therapy <em>effective</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes. Research shows online therapy is just as effective as in-person for most concerns, including compulsive gambling. For many men it's actually more accessible — the privacy and convenience make it easier to be honest and to stay consistent week to week. We offer both formats so you can choose what fits.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Will anyone find out I'm in therapy <em>for gambling</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>No. Everything you share is protected by strict confidentiality laws. We don't share information with partners, family members, or employers. The only exceptions are the standard legal ones around imminent harm, which your therapist will walk you through in the first session.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared footer injects into this slot -->
+<div id="site-footer"></div>
+
+<script>
+  /* Preview-only patch: rewrite absolute /assets/ paths to relative on the rendered DOM.
+     No effect in production (this file is hosted at site root). */
+  (function () {
+    if (location.hostname === 'anchormenstherapy.com') return;
+    new MutationObserver(() => {
+      document.querySelectorAll('img[src^="/assets/"], link[href^="/assets/"]').forEach(el => {
+        const attr = el.tagName === 'LINK' ? 'href' : 'src';
+        el.setAttribute(attr, el.getAttribute(attr).replace(/^\/assets\//, 'assets/'));
+      });
+    }).observe(document.documentElement, { subtree: true, childList: true });
+  })();
+</script>
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script>
+  /* FAQ accordion */
+  (function () {
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.faq-q');
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(o => {
+          o.classList.remove('open');
+          o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

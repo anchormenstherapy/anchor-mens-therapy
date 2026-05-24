@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan J. Caron | Founder of Anchor Men's Therapy</title>
+<meta name="description" content="Meet Jordan J. Caron, founder of Anchor Men's Therapy. He built Anchor from lived experience — grief, addiction, and the long road back. Learn his story.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<style>
+  /* ===========================================================
+     PAGE-SPECIFIC: JORDAN J. CARON — ABOUT / FOUNDER BIO
+     =========================================================== */
+
+  /* ---------- Hero (solid navy, centered) ---------- */
+  .about-hero {
+    background: var(--navy-deep);
+    padding: 200px 0 80px;
+    text-align: center;
+  }
+  .about-hero .eyebrow {
+    color: var(--accent);
+    opacity: 0.85;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .about-hero .eyebrow::before,
+  .about-hero .eyebrow::after {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+  .about-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(42px, 5.6vw, 72px);
+    line-height: 1.06;
+    letter-spacing: -0.022em;
+    color: var(--cream-soft);
+    margin: 0 auto 16px;
+  }
+  .about-hero .sub {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--accent);
+    font-weight: 400;
+  }
+
+  /* ---------- Photo section ---------- */
+  .about-photo {
+    background: var(--paper);
+    padding: 80px 0 16px;
+  }
+  .about-photo-inner {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .about-photo-inner img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(35,40,57,0.10);
+  }
+  .about-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .about-social a {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--navy);
+    text-decoration: none;
+    transition: background .2s, color .2s, border-color .2s;
+  }
+  .about-social a:hover {
+    background: var(--navy);
+    color: var(--cream-soft);
+    border-color: var(--navy);
+  }
+  .about-social svg { width: 14px; height: 14px; }
+
+  /* ---------- Bio content ---------- */
+  .about-bio {
+    background: var(--paper);
+    padding: 64px 0 120px;
+  }
+  .about-bio-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+  .about-section + .about-section { margin-top: 48px; }
+  .about-section h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(26px, 3vw, 32px);
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .about-section p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--slate);
+  }
+  .about-section p + p { margin-top: 20px; }
+  .about-section p a {
+    color: var(--navy);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color .2s;
+  }
+  .about-section p a:hover { color: var(--accent-deep); }
+
+  /* ---------- Closing note ---------- */
+  .about-closing {
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--line);
+  }
+  .about-closing p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--mute);
+    font-style: italic;
+    max-width: 62ch;
+  }
+
+  @media (max-width: 640px) {
+    .about-hero { padding: 140px 0 56px; }
+    .about-hero .eyebrow { display: none; }
+    .about-photo { padding: 56px 20px 8px; }
+    .about-photo-inner { max-width: 300px; }
+    .about-bio { padding: 48px 0 80px; }
+    .about-bio-inner { padding: 0 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Shared header injects into this slot -->
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- ===========================================================
+     1. HERO
+     =========================================================== -->
+<section class="about-hero" data-screen-label="01 Hero">
+  <div class="wrap">
+    <div class="eyebrow">About the Founder</div>
+    <h1>Jordan J. Caron</h1>
+    <p class="sub">Founder, Anchor Men's Therapy</p>
+  </div>
+</section>
+
+<!-- ===========================================================
+     2. PHOTO + SOCIAL LINKS
+     =========================================================== -->
+<section class="about-photo" data-screen-label="02 Photo">
+  <div class="about-photo-inner">
+    <img src="assets/jordan-caron.jpg" alt="Jordan J. Caron, Founder of Anchor Men's Therapy">
+    <div class="about-social" aria-label="Connect with Jordan">
+      <a href="https://jordanjcaron.com/" target="_blank" rel="noopener" aria-label="Personal site" title="jordanjcaron.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c3 3.5 3 14 0 18"></path><path d="M12 3c-3 3.5-3 14 0 18"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/jordanjcaron/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v7.44h-4.56v-6.6c0-1.57-.03-3.6-2.19-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.72V8z"></path></svg>
+      </a>
+      <a href="https://instagram.com/JordanJCaron" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg>
+      </a>
+      <a href="https://facebook.com/jordanjcaron" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.92.26-1.55 1.58-1.55h1.68V4.27c-.29-.04-1.29-.13-2.45-.13-2.42 0-4.08 1.48-4.08 4.2v2.33H7.5V14h2.7v8h3.3z"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     3. BIO CONTENT
+     =========================================================== -->
+<section class="about-bio" data-screen-label="03 Bio">
+  <div class="about-bio-inner">
+
+    <div class="about-section">
+      <p>Some people build businesses because they see a market opportunity. Jordan Caron founded Anchor Men's Therapy because he lived the gap and knows exactly how dark it gets when men have nowhere to turn.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>The Weight He Carried</h2>
+      <p>Jordan was 20 years old when he lost his brother. Two years later, at 22, he lost his father. Grief has a way of breaking open things you've spent years keeping locked shut, and for Jordan, those years that followed were defined by struggle, not strength.</p>
+      <p>Like so many men, Jordan didn't talk about it. He carried it. He found ways to cope that weren't really coping at all: gambling, pornography, and a quiet but persistent absence of self-worth that coloured everything. From the outside, life could look functional. On the inside, it was anything but.</p>
+      <p>"I lacked self-love and self-respect," Jordan says plainly. "I just didn't have the tools to deal with what I was feeling, and I didn't know where to find them. I didn't even know it was okay to look."</p>
+    </div>
+
+    <div class="about-section">
+      <h2>What Therapy Actually Did</h2>
+      <p>Eventually, Jordan found his way into therapy. Not because someone made him — but because something had to change. What happened in that process surprised him: not that he was fixed, but that he was finally seen. Therapy gave him language for what he'd been experiencing, tools to process grief and addiction, and, slowly, a rebuilt sense of who he was and what he was worth.</p>
+      <p>The right support changed everything. Clarity returned. Stability returned. And with it came a burning question: why is this so hard to find for men?</p>
+    </div>
+
+    <div class="about-section">
+      <h2>From the Inside Out — A Professional Perspective</h2>
+      <p>In 2022, Jordan founded <a href="https://marketingwell.ca/" target="_blank" rel="noopener noreferrer">Marketing Well</a>, a digital marketing agency dedicated exclusively to therapists across North America. What started as a career pivot became a crash course in the state of mental health care, particularly for men.</p>
+      <p>Working closely with therapists gave Jordan a rare behind-the-scenes view of the industry. He saw firsthand what clinicians were hearing week after week: men were reaching out for help in increasing numbers, and therapists, especially male therapists, were overwhelmed. The demand was real. The supply was critically short.</p>
+      <p>During this same period, Jordan spent three years as a <a href="https://mensgroup.com/success-story-jordan-caron/" target="_blank" rel="noopener noreferrer">facilitator at MensGroup.com</a> — leading multiple groups of men through open conversations on topics ranging from everyday challenges to more specific struggles like pornography addiction. Sitting in those circles, listening to men who had often never spoken these things aloud before, Jordan saw the same pattern repeat: men desperately wanted support. They just couldn't find a space that felt built for them.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Why Anchor Men's Therapy</h2>
+      <p>Anchor Men's Therapy was born from the convergence of lived experience and professional insight. Jordan isn't a therapist, but he knows what it means to need one, and he knows the landscape of mental health care better than most.</p>
+      <p>The name Anchor is intentional. When everything around you is turbulent — grief, addiction, identity, relationships — you need something to hold. Anchor Men's Therapy exists to be that hold: a group practice built specifically around men, staffed by certified male therapists who understand the unique terrain men navigate, and grounded in the belief that asking for help is not weakness. It's the most honest thing a man can do.</p>
+      <p>With a vision to become the largest men's-focused group practice in North America, Anchor is being built with purpose and patience — the same way real healing works.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Who Jordan Is Today</h2>
+      <p>Jordan J. Caron lives on Salt Spring Island, BC, Canada, a place known for its quiet and its community. He runs Marketing Well, continues his advocacy for men's mental health, and is actively building Anchor Men's Therapy into the resource he wishes had existed when he needed it most.</p>
+      <p>He doesn't claim to have all the answers. But he's done the work. And he's built a place for other men to do theirs.</p>
+    </div>
+
+    <div class="about-closing">
+      <p>Anchor Men's Therapy is a men's mental health group practice connecting men across North America with certified male therapists who specialize in men's issues, including grief, addiction, identity, stress, relationships, and emotional well-being. Founded by Jordan J. Caron, Anchor was built on the belief that every man deserves access to grounded, practical, and stigma-free mental health support.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Shared footer injects into this slot -->
+<div id="site-footer"></div>
+
+<script>
+  /* Preview-only patch: rewrite absolute /assets/ paths to relative on the rendered DOM.
+     No effect in production (this file is hosted at site root). */
+  (function () {
+    if (location.hostname === 'anchormenstherapy.com') return;
+    new MutationObserver(() => {
+      document.querySelectorAll('img[src^="/assets/"], link[href^="/assets/"]').forEach(el => {
+        const attr = el.tagName === 'LINK' ? 'href' : 'src';
+        el.setAttribute(attr, el.getAttribute(attr).replace(/^\/assets\//, 'assets/'));
+      });
+    }).observe(document.documentElement, { subtree: true, childList: true });
+  })();
+</script>
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+
+</body>
+</html>

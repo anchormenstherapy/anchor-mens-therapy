@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Free Consultation | Anchor Men's Therapy</title>
+<meta name="description" content="Book a free consultation with Anchor Men's Therapy. Connect with a male therapist who understands the issues men face. Online therapy across Canada and the USA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<style>
+  /* ===========================================================
+     PAGE-SPECIFIC: BOOK CONSULTATION
+     =========================================================== */
+
+  .consult-hero {
+    background: var(--navy-deep);
+    padding: 200px 0 80px;
+    text-align: center;
+  }
+  .consult-hero .eyebrow {
+    color: var(--accent);
+    opacity: 0.85;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .consult-hero .eyebrow::before,
+  .consult-hero .eyebrow::after { display: none; }
+  .consult-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(40px, 5vw, 68px);
+    line-height: 1.1;
+    color: var(--cream-soft);
+    margin: 0 0 20px;
+  }
+  .consult-hero .subtitle {
+    font-family: var(--sans);
+    font-size: clamp(16px, 1.8vw, 20px);
+    color: var(--accent);
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ---------- Form section ---------- */
+  .consult-section {
+    background: var(--paper);
+    padding: 80px 0 100px;
+  }
+  .consult-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--line-soft);
+    border-radius: 12px;
+    padding: 48px 40px;
+  }
+  .consult-card h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--navy-deep);
+    margin: 0 0 8px;
+    text-align: center;
+  }
+  .consult-card .form-intro {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--slate);
+    text-align: center;
+    margin: 0 0 32px;
+    line-height: 1.6;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-group label {
+    display: block;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--navy-deep);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--navy-deep);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-deep);
+    box-shadow: 0 0 0 3px rgba(172, 186, 196, 0.25);
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--accent);
+    opacity: 0.7;
+  }
+  .form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .form-submit {
+    width: 100%;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--cream-soft);
+    background: var(--navy-deep);
+    border: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+    margin-top: 8px;
+  }
+  .form-submit:hover { opacity: 0.88; }
+  .form-submit:active { transform: scale(0.99); }
+  .form-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .form-status {
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    display: none;
+  }
+  .form-status.success {
+    display: block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+  }
+  .form-status.error {
+    display: block;
+    background: #fbe9e7;
+    color: #c62828;
+    border: 1px solid #ffccbc;
+  }
+
+  .privacy-note {
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--slate);
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    opacity: 0.75;
+  }
+
+  @media (max-width: 640px) {
+    .consult-hero { padding: 160px 0 60px; }
+    .consult-section { padding: 48px 0 64px; }
+    .consult-card { padding: 32px 24px; margin: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<!-- ============ HERO ============ -->
+<section class="consult-hero">
+  <div class="wrap">
+    <p class="eyebrow">Get Started</p>
+    <h1>Book a Free Consultation</h1>
+    <p class="subtitle">Tell us a little about yourself and what you're looking for. We'll be in touch within one business day.</p>
+  </div>
+</section>
+
+<!-- ============ FORM ============ -->
+<section class="consult-section">
+  <div class="wrap">
+    <div class="consult-card">
+      <h2>How can we help?</h2>
+      <p class="form-intro">All information is kept strictly confidential.</p>
+
+      <form id="consultation-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="Where are you located?">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="What brings you to therapy? Any details help us match you with the right therapist."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="submit-btn">Send Consultation Request</button>
+
+        <div id="form-status" class="form-status"></div>
+
+        <p class="privacy-note">Your information is private and will never be shared. We typically respond within 24 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/header.js?v=8"></script>
+<script src="assets/footer.js?v=8"></script>
+<script>
+(function () {
+  var form = document.getElementById('consultation-form');
+  var btn = document.getElementById('submit-btn');
+  var status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    status.style.display = 'none';
+
+    var name = form.name.value.trim();
+    var email = form.email.value.trim();
+    var city = form.city.value.trim();
+    var message = form.message.value.trim();
+
+    if (!name || !email) {
+      status.textContent = 'Please fill in your name and email.';
+      status.className = 'form-status error';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    fetch('/api/consultation', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, city: city, message: message })
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success) {
+          status.textContent = 'Thank you! Your consultation request has been sent. We’ll be in touch soon.';
+          status.className = 'form-status success';
+          form.reset();
+        } else {
+          throw new Error(data.error || 'Something went wrong');
+        }
+      })
+      .catch(function (err) {
+        status.textContent = 'Sorry, something went wrong. Please email us directly at info@anchormenstherapy.com';
+        status.className = 'form-status error';
+      })
+      .finally(function () {
+        btn.disabled = false;
+        btn.textContent = 'Send Consultation Request';
+      });
+  });
+})();
+</script>
+</body>
+</html>

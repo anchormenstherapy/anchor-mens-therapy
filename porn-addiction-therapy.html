@@ -8,14 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/anchor.css">
+<link rel="stylesheet" href="assets/site.css?v=8">
 
 <style>
   /* ===========================================================
      PAGE-SPECIFIC: PORN ADDICTION THERAPY HUB
      =========================================================== */
 
-  /* ---------- Hero (issue-style, image background) ---------- */
+  /* ---------- Hero (image background, centered) ---------- */
   .issue-hero {
     position: relative;
     min-height: 640px;
@@ -96,7 +96,7 @@
   .issue-hero-actions .cta:hover { background: var(--accent); border-color: var(--accent); }
   .issue-hero-actions .cta.outline-light:hover { color: var(--navy-deep); }
 
-  /* ---------- Why Men Choose: 4-card grid ---------- */
+  /* ---------- Why Men Choose — 4-card grid ---------- */
   .why-choose { background: var(--paper); padding: 140px 0; }
   .why-choose-head { text-align: center; margin-bottom: 88px; }
   .why-choose-head .eyebrow { color: var(--navy); margin-bottom: 22px; }
@@ -206,6 +206,8 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
   .city-link {
     display: grid;
@@ -249,6 +251,15 @@
   .city-link:hover .arr { background: var(--navy); color: var(--cream-soft); border-color: var(--navy); transform: translateX(4px); }
   .city-row-inner { display: flex; flex-direction: column; gap: 2px; }
 
+  /* ---------- Var placeholder ---------- */
+  .var {
+    display: inline-block;
+    background: rgba(172, 186, 196, 0.16);
+    border-bottom: 1px dashed rgba(48, 54, 79, 0.32);
+    padding: 0 4px;
+    border-radius: 2px;
+  }
+
   /* ---------- Responsive overrides ---------- */
   @media (max-width: 1024px) {
     .cities-grid { grid-template-columns: 1fr; gap: 56px; }
@@ -266,45 +277,15 @@
 </head>
 <body>
 
-<!-- ===========================================================
-     1. HEADER
-     =========================================================== -->
-<header class="site" id="header" data-screen-label="01 Header">
-  <a href="#top" class="brand" aria-label="Anchor Men's Therapy home">
-    <div class="brand-svg">
-      <div class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
-          <circle cx="12" cy="4.5" r="1.6"></circle>
-          <line x1="12" y1="6.5" x2="12" y2="20"></line>
-          <path d="M5 14c0 4 3 6 7 6s7-2 7-6"></path>
-          <line x1="8.5" y1="9" x2="15.5" y2="9"></line>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <div class="brand-name">Anchor</div>
-        <div class="brand-sub">Men's Therapy</div>
-      </div>
-    </div>
-    <div class="brand-img" aria-hidden="true">
-      <img src="assets/logo.jpg" alt="Anchor Men's Therapy">
-    </div>
-  </a>
-  <nav class="primary" aria-label="Primary">
-    <a href="https://anchormenstherapy.com/">Home</a>
-    <a href="https://anchormenstherapy.com/about">About</a>
-    <a href="#issues">Issues</a>
-    <a href="#cities">Locations</a>
-    <a href="https://anchormenstherapy.com/resources">Resources</a>
-  </nav>
-  <a href="https://anchormenstherapy.com/book-consultation" class="header-cta">Free Consultation</a>
-</header>
+<!-- Shared header injects into this slot -->
+<div id="site-header"></div>
 
 <a id="top"></a>
 
 <!-- ===========================================================
-     2. HERO
+     1. HERO
      =========================================================== -->
-<section class="issue-hero" data-screen-label="02 Hero">
+<section class="issue-hero" data-screen-label="01 Hero">
   <div class="issue-hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="eyebrow">Therapy for Men &nbsp;&middot;&nbsp; Porn Addiction</div>
@@ -318,9 +299,9 @@
 </section>
 
 <!-- ===========================================================
-     3. WHY MEN CHOOSE — 4-CARD GRID
+     2. WHY MEN CHOOSE — 4-CARD GRID
      =========================================================== -->
-<section class="why-choose" id="issues" data-screen-label="03 Why Men Choose">
+<section class="why-choose" id="issues" data-screen-label="02 Why Men Choose">
   <div class="wrap">
     <div class="why-choose-head">
       <div class="eyebrow center">Your recovery matters</div>
@@ -356,9 +337,9 @@
 </section>
 
 <!-- ===========================================================
-     4. CITY DIRECTORY
+     3. CITY DIRECTORY
      =========================================================== -->
-<section class="cities" id="cities" data-screen-label="04 Cities">
+<section class="cities" id="cities" data-screen-label="03 Cities">
   <div class="wrap">
     <div class="cities-head">
       <div class="eyebrow center">Find local support</div>
@@ -533,9 +514,9 @@
 </section>
 
 <!-- ===========================================================
-     5. FOUNDER STORY
+     4. FOUNDER STORY
      =========================================================== -->
-<section class="founder pad" data-screen-label="05 Founder">
+<section class="founder pad" data-screen-label="04 Founder">
   <div class="wrap">
     <div class="founder-grid">
       <div class="founder-image-wrap">
@@ -550,7 +531,7 @@
           <p>Pornography had become so normalized, especially with the rise of the internet, that it was easy to dismiss the growing impact it was having on my confidence, relationships, and overall well-being.</p>
           <p>Over time, I began noticing patterns that felt increasingly difficult to control. Habits that once seemed harmless were affecting important areas of my life in ways I didn't fully understand.</p>
           <p>Seeking support changed that. Through a men's group, therapy and personal work, I gained a deeper understanding of how compulsive behaviors often function, not simply as habits, but as coping mechanisms tied to stress, emotional regulation, and underlying psychological patterns.</p>
-          <p>For three years I facilitated a porn recovery group on another platform. Seeing how many men came through the group became the reason why I wanted to start Anchor Men's Therapy. Too many men live yourself struggle quietly with similar challenges, often accompanied by frustration, shame, or confusion.</p>
+          <p>For three years I facilitated a porn recovery group on another platform. Seeing how many men came through the group became the reason why I wanted to start Anchor Men's Therapy. Too many men struggle quietly with similar challenges, often accompanied by frustration, shame, or confusion.</p>
           <p>This is why I created specialized support for men navigating compulsive pornography use and related concerns.</p>
           <p><em>Because change is possible, and no one has to navigate it alone.</em></p>
         </div>
@@ -579,9 +560,9 @@
 </section>
 
 <!-- ===========================================================
-     6. CTA BAND
+     5. CTA BAND
      =========================================================== -->
-<section class="cta-band" data-screen-label="06 CTA Band">
+<section class="cta-band" data-screen-label="05 CTA Band">
   <div class="wrap">
     <div class="cta-band-grid">
       <h2>Ready to Take the <em>First Step</em>?</h2>
@@ -591,9 +572,9 @@
 </section>
 
 <!-- ===========================================================
-     7. FAQ
+     6. FAQ
      =========================================================== -->
-<section class="faq pad" data-screen-label="07 FAQ">
+<section class="faq pad" data-screen-label="06 FAQ">
   <div class="wrap">
     <div class="faq-head">
       <div class="eyebrow center">Common questions</div>
@@ -664,77 +645,25 @@
   </div>
 </section>
 
-<!-- ===========================================================
-     8. FOOTER
-     =========================================================== -->
-<footer class="site" id="resources" data-screen-label="08 Footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#top" class="brand">
-          <div class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
-              <circle cx="12" cy="4.5" r="1.6"></circle>
-              <line x1="12" y1="6.5" x2="12" y2="20"></line>
-              <path d="M5 14c0 4 3 6 7 6s7-2 7-6"></path>
-              <line x1="8.5" y1="9" x2="15.5" y2="9"></line>
-            </svg>
-          </div>
-          <div class="brand-text">
-            <div class="brand-name">Anchor</div>
-            <div class="brand-sub">Men's Therapy</div>
-          </div>
-        </a>
-        <p>Professional therapy and counselling built specifically for men. Virtual sessions available across the USA and Canada.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="https://anchormenstherapy.com/">Home</a></li>
-          <li><a href="Porn Addiction Therapy.html">Porn Addiction Therapy</a></li>
-          <li><a href="https://anchormenstherapy.com/gambling-addiction-therapy">Gambling Addiction Therapy</a></li>
-          <li><a href="https://anchormenstherapy.com/book-consultation">Book A Consultation</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Resources</h5>
-        <ul>
-          <li><a href="#">Men's Mental Health</a></li>
-          <li><a href="#">Anxiety Therapy</a></li>
-          <li><a href="#">Addiction Therapy</a></li>
-          <li><a href="#">Couples Counselling</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-contact">
-        <h5>Canada Head Office</h5>
-        <div class="addr">477 Richmond St, #601<br>Toronto, ON M5V 3E7<br>Canada</div>
-        <div class="meta">By appointment</div>
-        <a class="email" href="/cdn-cgi/l/email-protection#5c34393030331c3d323f34332e3139322f2834392e3d2c25723f3331"><span class="__cf_email__" data-cfemail="2e464b4242416e4f404d46415c434b405d5a464b5c4f5e57004d4143">[email&#160;protected]</span></a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>© 2026 Anchor Men's Therapy. All rights reserved.</div>
-      <div>
-        <a href="#">Privacy</a>
-        <a href="#">Accessibility</a>
-        <a href="#">Terms</a>
-      </div>
-    </div>
-  </div>
-</footer>
+<!-- Shared footer injects into this slot -->
+<div id="site-footer"></div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  /* Header scroll state */
+<script>
+  /* Preview-only patch: rewrite absolute /assets/ paths to relative on the rendered DOM.
+     No effect in production (this file is hosted at site root). */
   (function () {
-    const h = document.getElementById('header');
-    const tick = () => {
-      if (window.scrollY > 60) h.classList.add('solid');
-      else h.classList.remove('solid');
-    };
-    window.addEventListener('scroll', tick, { passive: true });
-    tick();
+    if (location.hostname === 'anchormenstherapy.com') return;
+    new MutationObserver(() => {
+      document.querySelectorAll('img[src^="/assets/"], link[href^="/assets/"]').forEach(el => {
+        const attr = el.tagName === 'LINK' ? 'href' : 'src';
+        el.setAttribute(attr, el.getAttribute(attr).replace(/^\/assets\//, 'assets/'));
+      });
+    }).observe(document.documentElement, { subtree: true, childList: true });
   })();
-
+</script>
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script>
   /* FAQ accordion */
   (function () {
     document.querySelectorAll('.faq-item').forEach(item => {

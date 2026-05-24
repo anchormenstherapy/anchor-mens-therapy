@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Porn Recovery Group for Men | Support &amp; Accountability</title>
+<meta name="description" content="Join our confidential porn recovery group for men. Monthly virtual meetings with experienced facilitator. Learn how to recover from porn with support from other men. Limited to 20 members. $60 CAD/month.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<style>
+  /* ===========================================================
+     PAGE-SPECIFIC: PORN RECOVERY GROUP
+     =========================================================== */
+
+  /* ---------- Hero ---------- */
+  .prg-hero {
+    position: relative;
+    min-height: 620px;
+    padding: 200px 0 96px;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+  }
+  .prg-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: var(--navy-deep);
+    background-image: url('assets/porn-recovery-group-hero.jpg');
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+  }
+  .prg-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(35,40,57,0.90);
+  }
+  .prg-hero .wrap { position: relative; z-index: 1; max-width: 900px; }
+  .prg-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(38px, 5.6vw, 72px);
+    line-height: 1.06;
+    letter-spacing: -0.022em;
+    color: var(--cream-soft);
+    margin: 0 auto 24px;
+  }
+  .prg-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .prg-hero .sub {
+    max-width: 56ch;
+    margin: 0 auto 44px;
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--cream-soft);
+    opacity: 0.88;
+    font-weight: 300;
+  }
+  .prg-hero-actions {
+    display: inline-flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .prg-hero-actions .cta {
+    background: var(--cream-soft);
+    color: var(--navy-deep);
+    border-color: var(--cream-soft);
+  }
+  .prg-hero-actions .cta:hover { background: var(--accent); border-color: var(--accent); }
+
+  /* ---------- Details grid ---------- */
+  .prg-details { background: var(--paper); }
+  .prg-details-head { text-align: center; margin-bottom: 72px; }
+  .prg-details-head .eyebrow { color: var(--navy); margin-bottom: 22px; }
+  .prg-details-head .section-title { max-width: 22ch; margin: 0 auto; }
+  .prg-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+  .prg-detail-icon {
+    width: 56px; height: 56px;
+    border-radius: 14px;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cream-soft);
+    margin: 0 auto 20px;
+  }
+  .prg-detail-icon svg { width: 24px; height: 24px; }
+  .prg-detail-title {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .prg-detail-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--slate);
+    max-width: 28ch;
+    margin: 0 auto;
+  }
+
+  /* ---------- Meeting format ---------- */
+  .prg-format { background: var(--cream); }
+  .prg-format-head { text-align: center; margin-bottom: 56px; }
+  .prg-format-head .eyebrow { color: var(--navy); margin-bottom: 22px; }
+  .prg-format-head .section-title { max-width: 22ch; margin: 0 auto; }
+  .prg-format-list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .prg-step {
+    display: flex;
+    gap: 20px;
+    background: var(--paper);
+    padding: 28px 32px;
+    border-radius: 8px;
+  }
+  .prg-step-num {
+    flex-shrink: 0;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--cream-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  .prg-step h3 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .prg-step p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--slate);
+  }
+
+  /* ---------- Facilitator / Founder ---------- */
+  .prg-facilitator { background: var(--paper); }
+  .prg-facilitator-head { text-align: center; margin-bottom: 56px; }
+  .prg-facilitator-head .eyebrow { color: var(--navy); margin-bottom: 22px; }
+  .prg-facilitator-head .section-title { max-width: 22ch; margin: 0 auto; }
+  .prg-facilitator-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 80px;
+    align-items: start;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .prg-facilitator-photo {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(35,40,57,0.10);
+  }
+  .prg-facilitator-photo img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+  .prg-facilitator-text p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--slate);
+  }
+  .prg-facilitator-text p + p { margin-top: 20px; }
+  .prg-facilitator-text p em {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink);
+  }
+  .prg-facilitator-sig {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+  .prg-facilitator-sig .name {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .prg-facilitator-sig .role {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-top: 6px;
+  }
+
+  /* ---------- Why join ---------- */
+  .prg-why { background: var(--cream); }
+  .prg-why-head { text-align: center; margin-bottom: 56px; }
+  .prg-why-head .section-title { max-width: 22ch; margin: 0 auto; }
+  .prg-why-list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .prg-why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: var(--paper);
+    padding: 22px 28px;
+    border-radius: 8px;
+  }
+  .prg-why-check {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    color: var(--navy);
+    margin-top: 2px;
+  }
+  .prg-why-item p {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+
+  /* ---------- CTA / Join section ---------- */
+  .prg-join {
+    background: var(--navy);
+    color: var(--cream-soft);
+    padding: 100px 0;
+    text-align: center;
+  }
+  .prg-join h2 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(32px, 4.2vw, 50px);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    color: var(--cream-soft);
+    margin-bottom: 20px;
+  }
+  .prg-join h2 em { font-style: italic; color: var(--accent); }
+  .prg-join > .wrap-narrow > .sub {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--accent);
+    max-width: 50ch;
+    margin: 0 auto 40px;
+  }
+  .prg-join-box {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 36px 40px;
+    max-width: 640px;
+    margin: 0 auto 40px;
+    text-align: left;
+  }
+  .prg-join-box h3 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--cream-soft);
+    margin-bottom: 20px;
+  }
+  .prg-join-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .prg-join-box li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--accent);
+  }
+  .prg-join-box .check-icon {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    color: var(--cream-soft);
+    margin-top: 2px;
+  }
+  .prg-join-status {
+    margin-bottom: 32px;
+  }
+  .prg-join-status .count {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cream-soft);
+    margin-bottom: 6px;
+  }
+  .prg-join-status .note {
+    font-size: 15px;
+    color: var(--accent);
+  }
+  #paypal-button-container-P-8PH756897U784373HNGHHTRQ {
+    max-width: 400px;
+    margin: 0 auto 40px;
+  }
+  .prg-join-after {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 12px;
+    padding: 36px 40px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .prg-join-after h3 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--cream-soft);
+    margin-bottom: 20px;
+  }
+  .prg-join-after ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .prg-join-after li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--accent);
+  }
+  .prg-join-after .check-icon {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    color: var(--cream-soft);
+    margin-top: 2px;
+  }
+  .prg-join-after .contact {
+    font-size: 14px;
+    color: var(--accent);
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.10);
+  }
+  .prg-join-after .contact a {
+    color: var(--cream-soft);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* ---------- Lead magnet section ---------- */
+  .prg-lead {
+    background: var(--paper);
+    padding: 100px 0;
+  }
+  .prg-lead-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .prg-lead-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(35,40,57,0.10);
+  }
+  .prg-lead-image img {
+    width: 100%;
+    display: block;
+  }
+  .prg-lead-text h2 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(28px, 3.4vw, 38px);
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .prg-lead-text h2 em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .prg-lead-text > p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--slate);
+    margin-bottom: 24px;
+  }
+  .prg-lead-list {
+    list-style: none;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .prg-lead-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .prg-lead-list .check-sm {
+    flex-shrink: 0;
+    width: 18px; height: 18px;
+    color: var(--navy);
+    margin-top: 3px;
+  }
+  .prg-lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 380px;
+  }
+  .prg-lead-form input {
+    padding: 14px 18px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--white);
+    transition: border-color .2s;
+  }
+  .prg-lead-form input:focus {
+    outline: none;
+    border-color: var(--navy);
+  }
+  .prg-lead-form input::placeholder { color: var(--mute); }
+  .prg-lead-form .cta { justify-content: center; }
+  .prg-lead-form .privacy {
+    font-size: 12px;
+    color: var(--mute);
+    line-height: 1.5;
+  }
+
+  /* ---------- FAQ overrides ---------- */
+  .prg-faq { background: var(--cream); }
+
+  @media (max-width: 1024px) {
+    .prg-details-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .prg-facilitator-grid { grid-template-columns: 1fr; gap: 48px; }
+    .prg-facilitator-photo { max-width: 400px; }
+    .prg-lead-inner { grid-template-columns: 1fr; gap: 40px; }
+    .prg-lead-image { max-width: 320px; }
+  }
+  @media (max-width: 640px) {
+    .prg-hero { padding: 140px 0 64px; min-height: 520px; }
+    .prg-details-grid { grid-template-columns: 1fr; gap: 40px; }
+    .prg-join-box, .prg-join-after { padding: 28px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Shared header injects into this slot -->
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- ===========================================================
+     1. HERO
+     =========================================================== -->
+<section class="prg-hero" data-screen-label="01 Hero">
+  <div class="prg-hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <h1>Online Men's Porn Recovery Group — <em>Founding Cohort Now Forming</em></h1>
+    <p class="sub">Join the first cohort of men committed to breaking free. Weekly online group therapy led by an experienced facilitator. Limited to 20 members. First meeting: Saturday, February 22, 2026 @ 10 AM PST.</p>
+    <div class="prg-hero-actions">
+      <a href="#join" class="cta"><span>Reserve Your Spot in Founding Cohort</span> <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     2. GROUP DETAILS
+     =========================================================== -->
+<section class="prg-details pad" data-screen-label="02 Details">
+  <div class="wrap">
+    <div class="prg-details-head">
+      <div class="eyebrow center">Group Details</div>
+      <h2 class="section-title">What You Need <em>to Know</em>.</h2>
+    </div>
+    <div class="prg-details-grid">
+
+      <div>
+        <div class="prg-detail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+        </div>
+        <h3 class="prg-detail-title">4 Monthly Meetings</h3>
+        <p class="prg-detail-desc">Consistent support every Saturday throughout the month</p>
+      </div>
+
+      <div>
+        <div class="prg-detail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3 class="prg-detail-title">10 AM – 12 PM PST</h3>
+        <p class="prg-detail-desc">Two-hour sessions every Saturday with structured format and open discussion</p>
+      </div>
+
+      <div>
+        <div class="prg-detail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <h3 class="prg-detail-title">Virtual via Google Meets</h3>
+        <p class="prg-detail-desc">Join from anywhere — completely private and convenient</p>
+      </div>
+
+      <div>
+        <div class="prg-detail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="prg-detail-title">Limited to 20 Members</h3>
+        <p class="prg-detail-desc">Small group size ensures everyone is heard and supported</p>
+      </div>
+
+      <div>
+        <div class="prg-detail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3 class="prg-detail-title">$60 CAD per Month</h3>
+        <p class="prg-detail-desc">Affordable ongoing support with money-back guarantee if not satisfied after first session</p>
+      </div>
+
+      <div>
+        <div class="prg-detail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3 class="prg-detail-title">Email Follow-Up</h3>
+        <p class="prg-detail-desc">Receive Google Meets link and details after sign-up</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     3. MEETING FORMAT
+     =========================================================== -->
+<section class="prg-format pad" data-screen-label="03 Format">
+  <div class="wrap">
+    <div class="prg-format-head">
+      <div class="eyebrow center">How it works</div>
+      <h2 class="section-title">Meeting <em>Format</em>.</h2>
+    </div>
+    <div class="prg-format-list">
+
+      <div class="prg-step">
+        <div class="prg-step-num">1</div>
+        <div>
+          <h3>Check-In Round</h3>
+          <p>Each meeting begins with a 5-minute introduction of any new members, followed by a brief check-in from other members. Everyone shares how they're doing — no pressure, just an opportunity to be present and heard.</p>
+        </div>
+      </div>
+
+      <div class="prg-step">
+        <div class="prg-step-num">2</div>
+        <div>
+          <h3>Open Discussion</h3>
+          <p>The second half focuses on topics members want to discuss. Whether you need feedback, advice, or just to be heard without judgment — this is your time.</p>
+        </div>
+      </div>
+
+      <div class="prg-step">
+        <div class="prg-step-num">3</div>
+        <div>
+          <h3>Peer Support &amp; Accountability</h3>
+          <p>Receive honest feedback and solid advice from other men who understand the journey. Build accountability and connection in a confidential, supportive environment.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     4. MEET YOUR FACILITATOR
+     =========================================================== -->
+<section class="prg-facilitator pad" data-screen-label="04 Facilitator">
+  <div class="wrap">
+    <div class="prg-facilitator-head">
+      <div class="eyebrow center">Why this matters</div>
+      <h2 class="section-title">Meet Your <em>Facilitator</em>.</h2>
+    </div>
+    <div class="prg-facilitator-grid">
+      <div class="prg-facilitator-photo">
+        <img src="assets/jordan-caron.jpg" alt="Jordan J. Caron, Founder of Anchor Men's Therapy">
+      </div>
+      <div class="prg-facilitator-text">
+        <p>Like many men and perhaps yourself, my exposure to pornography began early. What started as curiosity gradually became a pattern that followed me for years. At the time, I didn't recognize it as a problem.</p>
+        <p>Pornography had become so normalized, especially with the rise of the internet, that it was easy to dismiss the growing impact it was having on my confidence, relationships, and overall well-being.</p>
+        <p>Over time, I began noticing patterns that felt increasingly difficult to control. Habits that once seemed harmless were affecting important areas of my life in ways I didn't fully understand.</p>
+        <p>Seeking support changed that. Through a men's group, therapy and personal work, I gained a deeper understanding of how compulsive behaviours often function — not simply as habits, but as coping mechanisms tied to stress, emotional regulation, and underlying psychological patterns.</p>
+        <p>For three years I facilitated a porn recovery group on another platform. Seeing how many men came through the group became the reason why I wanted to start this online porn recovery group. Too many men like yourself struggle quietly with similar challenges, often accompanied by frustration, shame, or confusion.</p>
+        <p>This porn recovery group provides a grounded, confidential support group for men navigating compulsive pornography use and related concerns.</p>
+        <p><em>Because change is possible, and no one has to navigate it alone.</em></p>
+        <div class="prg-facilitator-sig">
+          <div class="name">Jordan J. Caron</div>
+          <div class="role">Founder, Anchor Men's Therapy</div>
+          <div class="founder-social" aria-label="Connect with Jordan" style="margin-top:20px">
+            <a href="https://jordanjcaron.com/" target="_blank" rel="noopener" aria-label="Personal site" title="jordanjcaron.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c3 3.5 3 14 0 18"></path><path d="M12 3c-3 3.5-3 14 0 18"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jordanjcaron/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v7.44h-4.56v-6.6c0-1.57-.03-3.6-2.19-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.72V8z"></path></svg>
+            </a>
+            <a href="https://instagram.com/JordanJCaron" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg>
+            </a>
+            <a href="https://facebook.com/jordanjcaron" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.92.26-1.55 1.58-1.55h1.68V4.27c-.29-.04-1.29-.13-2.45-.13-2.42 0-4.08 1.48-4.08 4.2v2.33H7.5V14h2.7v8h3.3z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     5. WHY JOIN
+     =========================================================== -->
+<section class="prg-why pad" data-screen-label="05 Why Join">
+  <div class="wrap">
+    <div class="prg-why-head">
+      <h2 class="section-title">Why Join a Porn <em>Recovery Group</em>?</h2>
+    </div>
+    <div class="prg-why-list">
+
+      <div class="prg-why-item">
+        <svg class="prg-why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p>You're tired of trying to quit on your own without success</p>
+      </div>
+
+      <div class="prg-why-item">
+        <svg class="prg-why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p>You want accountability from men who understand what you're going through</p>
+      </div>
+
+      <div class="prg-why-item">
+        <svg class="prg-why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p>You're ready to address the underlying issues, not just the behaviour</p>
+      </div>
+
+      <div class="prg-why-item">
+        <svg class="prg-why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p>You want a confidential space to talk openly without shame or judgment</p>
+      </div>
+
+      <div class="prg-why-item">
+        <svg class="prg-why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p>You're looking for practical strategies and peer support</p>
+      </div>
+
+      <div class="prg-why-item">
+        <svg class="prg-why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p>You recognize that recovery is a journey, not a one-time fix</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     6. CTA — BE A FOUNDING MEMBER
+     =========================================================== -->
+<section class="prg-join" id="join" data-screen-label="06 Join">
+  <div class="wrap-narrow">
+    <h2>Be a <em>Founding Member</em>.</h2>
+    <p class="sub">We're forming our first cohort and looking for 8–12 committed men to start this journey together.</p>
+
+    <div class="prg-join-box">
+      <h3>What "founding member" means:</h3>
+      <ul>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>You'll shape how this group evolves</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Build bonds with men starting from Day 1 together</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Founding member pricing: $60 CAD/month locked in (regular price will be $80)</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>First meeting: Saturday, February 22nd at 10 AM PST</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="prg-join-status">
+      <div class="count">Current status: 4 of 12 spots filled</div>
+      <div class="note">Reserve your spot now. Once we hit 12 members, we begin.</div>
+    </div>
+
+    <div id="paypal-button-container-P-8PH756897U784373HNGHHTRQ"></div>
+
+    <div class="prg-join-after">
+      <h3>What happens after you sign up:</h3>
+      <ul>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>You'll receive a welcome email within 24 hours</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>First group meeting: Saturday, February 22nd at 10 AM PST</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Google Meets link will be sent 48 hours before our first session</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>In the meantime, download our free 30-Day Challenge just below to start preparing</span>
+        </li>
+      </ul>
+      <p class="contact">Questions? Email <a href="mailto:info@anchormenstherapy.com">info@anchormenstherapy.com</a> or reply to your welcome email.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     7. LEAD MAGNET — 30-DAY CHALLENGE
+     =========================================================== -->
+<section class="prg-lead" id="start-here" data-screen-label="07 Lead Magnet">
+  <div class="wrap">
+    <div class="prg-lead-inner">
+      <div class="prg-lead-image">
+        <img src="assets/30-day-challenge-cover.jpg" alt="The 30-Day Porn-Free Challenge PDF">
+      </div>
+      <div class="prg-lead-text">
+        <h2>Not Ready to Join Yet? <em>Start Here</em>.</h2>
+        <p>Get our free 30-Day Porn-Free Challenge and start your recovery journey today.</p>
+        <p>This step-by-step guide includes:</p>
+        <ul class="prg-lead-list">
+          <li>
+            <svg class="check-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>30 daily actions that add up to real momentum</span>
+          </li>
+          <li>
+            <svg class="check-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Strategies to break the cycle without willpower alone</span>
+          </li>
+          <li>
+            <svg class="check-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Log-tracking sheets to identify your patterns</span>
+          </li>
+          <li>
+            <svg class="check-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>A structured but flexible 30-day roadmap</span>
+          </li>
+        </ul>
+        <form class="prg-lead-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Your email address" required>
+          <button type="submit" class="cta"><span>Send Me The Free Challenge</span> <span class="arr">&rarr;</span></button>
+          <p class="privacy">We respect your privacy. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     8. FAQ
+     =========================================================== -->
+<section class="prg-faq faq pad" data-screen-label="08 FAQ">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="eyebrow center">Common questions</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em>.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true">
+          <span>Is this group <em>confidential</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes, absolutely. Everything shared in the group stays in the group. Confidentiality is a core principle of our porn recovery meetings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Do I need to have <em>my camera on</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Camera use is encouraged to build trust and connection, but it's not mandatory. We understand some men prefer to start with just audio.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What if I <em>miss a meeting</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Life happens. You're welcome to rejoin the following week. Your monthly membership covers all four Saturday meetings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Who <em>facilitates</em> the group?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>The group is led by an experienced facilitator who has been running porn recovery groups for over 3 years on other platforms.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What happens in a <em>typical meeting</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Each session starts with a quick check-in from everyone. The second half focuses on topics members want to discuss — receiving feedback, advice, or simply being heard without judgment.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How do I <em>join after signing up</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>After you complete payment via PayPal, you'll receive an email with the Google Meets link and additional details about the group.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared footer injects into this slot -->
+<div id="site-footer"></div>
+
+<script>
+  (function () {
+    if (location.hostname === 'anchormenstherapy.com') return;
+    new MutationObserver(() => {
+      document.querySelectorAll('img[src^="/assets/"], link[href^="/assets/"]').forEach(el => {
+        const attr = el.tagName === 'LINK' ? 'href' : 'src';
+        el.setAttribute(attr, el.getAttribute(attr).replace(/^\/assets\//, 'assets/'));
+      });
+    }).observe(document.documentElement, { subtree: true, childList: true });
+  })();
+</script>
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script>
+  /* FAQ accordion */
+  (function () {
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.faq-q');
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(o => {
+          o.classList.remove('open');
+          o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
+<script>
+  /* PayPal subscription button */
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://www.paypal.com/sdk/js?client-id=AWTBK8rTXUEwvn1trtB90IdxmpIBGRpUdsCvtuFotQqvabpmasQxViuqsv3U2Yv5ugrn0VQIUHkJbpV6&vault=true&intent=subscription';
+    s.setAttribute('data-sdk-integration-source', 'button-factory');
+    s.onload = function () {
+      if (window.paypal) {
+        window.paypal.Buttons({
+          style: { shape: 'rect', color: 'gold', layout: 'vertical', label: 'subscribe' },
+          createSubscription: function (data, actions) {
+            return actions.subscription.create({ plan_id: 'P-8PH756897U784373HNGHHTRQ' });
+          },
+          onApprove: function (data) {
+            alert('Subscription successful! ID: ' + data.subscriptionID);
+          }
+        }).render('#paypal-button-container-P-8PH756897U784373HNGHHTRQ');
+      }
+    };
+    document.head.appendChild(s);
+  })();
+</script>
+<script>
+  /* Smooth scroll for hash links */
+  (function () {
+    if (window.location.hash) {
+      setTimeout(function () {
+        var el = document.querySelector(window.location.hash);
+        if (el) {
+          var top = el.getBoundingClientRect().top + window.pageYOffset - 100;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      }, 200);
+    }
+  })();
+</script>
+
+</body>
+</html>

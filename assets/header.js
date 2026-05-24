@@ -84,6 +84,15 @@
     </div>
   `;
 
+  // ----- Favicon -----
+  if (!document.querySelector('link[rel="icon"]')) {
+    const fav = document.createElement('link');
+    fav.rel = 'icon';
+    fav.type = 'image/png';
+    fav.href = '/assets/anchor-favicon.png';
+    document.head.appendChild(fav);
+  }
+
   // ----- Inject -----
   function inject() {
     const slot = document.getElementById('site-header');

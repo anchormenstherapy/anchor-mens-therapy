@@ -10,13 +10,22 @@
   // ----- Configure your nav here -----
   const NAV = [
     { type: 'link',     label: 'Home',      href: '/' },
-    { type: 'link',     label: 'About',     href: '/#about' },
-    { type: 'link',     label: 'Issues',    href: '/#issues' },
-    { type: 'dropdown', label: 'Locations', items: [
-        { label: 'Canadian Cities', href: '/canada.html', meta: 'CA' },
-        { label: 'USA Cities',      href: '/usa.html',    meta: 'US' },
+    { type: 'link',     label: 'About',     href: '/jordan-j-caron' },
+    { type: 'dropdown', label: 'Issues', items: [
+        { label: 'Dating & Marriage',              href: '/dating-and-marriage' },
+        { label: 'Break Up & Divorce',             href: '/break-up-and-divorce' },
+        { label: 'Fatherhood',                     href: '/fatherhood' },
+        { label: 'Trauma & Stress',                href: '/trauma-and-stress' },
+        { label: 'Work-Life Balance',              href: '/work-life-balance' },
+        { label: 'Sexlessness & Intimacy',         href: '/sexlessness-and-intimacy' },
+        { label: 'Infidelity & Sexual Compulsion', href: '/infidelity-and-sexual-compulsion' },
+        { label: 'Porn & Other Addictions',        href: '/porn-and-other-addictions' },
     ]},
-    { type: 'link',     label: 'Resources', href: '/#resources' },
+    { type: 'dropdown', label: 'Locations', items: [
+        { label: 'Canadian Cities', href: '/canada', meta: 'CA' },
+        { label: 'USA Cities',      href: '/usa',    meta: 'US' },
+    ]},
+    { type: 'link',     label: 'Blog',      href: '/blog' },
   ];
   const CTA = { label: 'Free Consultation', href: 'https://anchormenstherapy.com/book-consultation' };
   const LOGO = { src: '/assets/logo.png', alt: "Anchor Men's Therapy" };
@@ -83,6 +92,16 @@
       </div>
     </div>
   `;
+
+  // ----- Google Tag Manager -----
+  if (!window.__gtm_loaded) {
+    window.__gtm_loaded = true;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5978WJJD');
+  }
 
   // ----- Favicon -----
   if (!document.querySelector('link[rel="icon"]')) {

@@ -52,6 +52,8 @@
     opacity: 0.85;
     margin-bottom: 28px;
     justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
   }
   .issue-hero .eyebrow::before,
   .issue-hero .eyebrow::after {
@@ -61,6 +63,10 @@
     background: currentColor;
     opacity: 0.6;
     flex-shrink: 0;
+  }
+  @media (max-width: 640px) {
+    .issue-hero .eyebrow::before,
+    .issue-hero .eyebrow::after { display: none; }
   }
   .issue-hero h1 {
     font-family: var(--serif);
@@ -111,14 +117,8 @@
   }
   .outcomes-list.checks .check svg { width: 11px; height: 11px; }
 
-  /* ---------- Var placeholder ---------- */
-  .var {
-    display: inline-block;
-    background: rgba(172, 186, 196, 0.16);
-    border-bottom: 1px dashed rgba(48, 54, 79, 0.32);
-    padding: 0 4px;
-    border-radius: 2px;
-  }
+  /* ---------- City variable ---------- */
+  .var { display: inline; }
 
   @media (max-width: 640px) {
     .issue-hero { padding: 140px 0 64px; min-height: 540px; }
@@ -167,7 +167,7 @@
   <div class="wrap">
     <div class="outcomes-grid">
       <div class="outcomes-image-wrap">
-        <div class="image-placeholder">Lifestyle portrait · drop in when ready</div>
+        <img src="assets/lifestyle-portrait.jpeg" alt="A man finding clarity and confidence through therapy">
       </div>
       <div class="outcomes-text">
         <div class="eyebrow">Your new chapter</div>
@@ -423,7 +423,7 @@
     <p>Book a free consultation with a male therapist in Anchorage. See whether this is the right fit, on your timing and your terms.</p>
     <div class="final-cta-actions">
       <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
-      <a href="Porn Addiction Therapy.html" class="cta outline"><span>Back to All Cities</span></a>
+      <a href="https://anchor-mens-therapy.vercel.app/porn-addiction-therapy" class="cta outline"><span>Back to All Cities</span></a>
     </div>
   </div>
 </section>

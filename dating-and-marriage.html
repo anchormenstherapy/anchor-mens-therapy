@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dating &amp; Marriage Therapy for Men — Anchor Men's Therapy</title>
+<meta name="description" content="Therapy for men navigating dating, marriage, and the complexities of modern relationships. Online sessions with male therapists. Book a free consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<!-- =====================================================================
+     ISSUE PAGE TEMPLATE
+     ---------------------------------------------------------------------
+     To create a new issue page (e.g. fatherhood, trauma-and-stress):
+       1. Duplicate this file → /<issue-slug>.html
+       2. Replace the hero <img>/background with the issue-specific asset
+       3. Update <title>, <meta description>, all .var spans, and copy
+       4. (Optional) swap the FAQ items for issue-specific questions
+
+     The .var class is invisible (no styling) — it's just a semantic
+     marker so find/replace is fast and safe.
+     ===================================================================== -->
+
+<style>
+  /* Hero — uses page-specific background image set inline below */
+  .issue-hero {
+    position: relative;
+    min-height: 640px;
+    padding: 200px 0 80px;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .issue-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: var(--navy-deep);
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+  }
+  .issue-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(35,40,57,0.72) 0%, rgba(35,40,57,0.42) 35%, rgba(35,40,57,0.48) 65%, rgba(35,40,57,0.78) 100%),
+      linear-gradient(90deg, rgba(35,40,57,0.40) 0%, rgba(35,40,57,0) 45%);
+  }
+  .issue-hero .wrap { position: relative; z-index: 1; max-width: 1100px; }
+  .issue-hero .eyebrow {
+    color: var(--cream-soft);
+    opacity: 0.88;
+    margin-bottom: 24px;
+  }
+  .issue-hero .eyebrow::before { background: var(--cream-soft); opacity: 0.6; }
+  .issue-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(44px, 5.6vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--cream-soft);
+    max-width: 22ch;
+    margin: 0 0 24px;
+  }
+  .issue-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .issue-hero .sub {
+    max-width: 56ch;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--cream-soft);
+    opacity: 0.92;
+    margin-bottom: 40px;
+  }
+  .issue-hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .issue-hero-actions .cta.outline {
+    border-color: rgba(246, 244, 227, 0.45);
+    color: var(--cream-soft);
+  }
+  .issue-hero-actions .cta.outline:hover {
+    background: var(--cream-soft);
+    color: var(--navy-deep);
+    border-color: var(--cream-soft);
+  }
+
+  /* Signs / "how it shows up" card grid */
+  .signs { background: var(--cream); }
+  .signs-head { text-align: center; margin-bottom: 64px; }
+  .signs-head .eyebrow { color: var(--navy); margin-bottom: 24px; display: inline-block; }
+  .signs-head h2 { max-width: 22ch; margin: 0 auto 20px; }
+  .signs-head p { max-width: 56ch; margin: 0 auto; color: var(--slate); font-size: 16px; line-height: 1.75; }
+  .signs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .sign-item {
+    padding: 36px 32px 36px 0;
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+  }
+  .sign-item:nth-child(3n) { border-right: none; padding-right: 0; }
+  .sign-item:nth-child(3n+1) { padding-left: 0; }
+  .sign-item:not(:nth-child(3n+1)) { padding-left: 32px; }
+  .sign-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 16px;
+  }
+  .sign-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+  .sign-title em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .sign-desc {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--slate);
+  }
+
+  /* "How we help" 2-column with lifestyle portrait */
+  .help { background: var(--paper); }
+  .help-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .help-image-wrap {
+    width: 100%;
+  }
+  .help-image-wrap > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 4px;
+  }
+  .help-text .eyebrow { color: var(--navy); margin-bottom: 24px; display: inline-block; }
+  .help-text h2 { max-width: 18ch; margin-bottom: 28px; }
+  .help-text > p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--slate);
+    max-width: 52ch;
+    margin-bottom: 18px;
+  }
+  .help-text > p em {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .help-list {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .help-list li {
+    padding: 18px 0 18px 32px;
+    border-bottom: 1px solid var(--line);
+    font-size: 15.5px;
+    line-height: 1.55;
+    color: var(--ink);
+    position: relative;
+    font-family: var(--serif);
+    font-weight: 500;
+  }
+  .help-list li::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 28px;
+    width: 16px;
+    height: 1px;
+    background: var(--navy);
+  }
+
+  /* Closely-related issues row at the bottom */
+  .related { background: var(--cream); }
+  .related-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--line); gap: 24px; flex-wrap: wrap; }
+  .related-head .eyebrow { color: var(--navy); margin-bottom: 8px; }
+  .related-head h3 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+  .related-back {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--navy);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap .2s, color .2s;
+  }
+  .related-back:hover { gap: 14px; color: var(--navy-deep); }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .related-card {
+    background: var(--paper);
+    padding: 28px 26px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .28s ease, background .28s ease, box-shadow .28s ease;
+    border-radius: 4px;
+    min-height: 220px;
+  }
+  .related-card:hover {
+    transform: translateY(-3px);
+    background: var(--cream-soft);
+    box-shadow: 0 6px 24px rgba(35,40,57,0.08);
+  }
+  .related-card .name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--navy);
+  }
+  .related-card .desc {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--slate);
+    flex-grow: 1;
+  }
+  .related-card .link {
+    margin-top: 4px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line-soft);
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--navy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: gap .25s;
+  }
+  .related-card:hover .link { gap: 18px; }
+  .related-card .arr { transition: transform .25s; }
+  .related-card:hover .arr { transform: translateX(4px); }
+
+  /* Responsive */
+  @media (max-width: 1000px) {
+    .signs-grid { grid-template-columns: repeat(2, 1fr); }
+    .sign-item,
+    .sign-item:nth-child(3n),
+    .sign-item:nth-child(3n+1),
+    .sign-item:not(:nth-child(3n+1)) {
+      padding: 32px;
+      border-right: 1px solid var(--line);
+    }
+    .sign-item:nth-child(2n) { border-right: none; padding-right: 0; }
+    .sign-item:nth-child(2n+1) { padding-left: 0; }
+    .help-grid { grid-template-columns: 1fr; gap: 48px; }
+    .help-image-wrap { max-width: 480px; margin: 0 auto; order: -1; }
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .issue-hero { padding: 140px 0 64px; min-height: 540px; }
+    .issue-hero h1 { font-size: 40px; }
+    .issue-hero .sub { font-size: 15.5px; }
+    .signs-grid { grid-template-columns: 1fr; }
+    .sign-item,
+    .sign-item:nth-child(2n),
+    .sign-item:nth-child(2n+1) {
+      padding: 28px 0;
+      border-right: none;
+    }
+    .related-grid { grid-template-columns: 1fr; }
+    .related-head { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- ===========================================================
+     1. HERO
+     - Set background image inline (per-page). Change "dating-hero.webp"
+       for each new issue page.
+     - Update eyebrow, h1, sub.
+     =========================================================== -->
+<section class="issue-hero" data-screen-label="01 Hero">
+  <div class="issue-hero-bg" aria-hidden="true" style="background-image: url('assets/dating-hero.webp');"></div>
+  <div class="wrap">
+    <div class="eyebrow">Therapy for Men &nbsp;·&nbsp; <span class="var">Dating &amp; Marriage</span></div>
+    <h1><span class="var">Dating &amp; Marriage</span> Therapy <em>for Men</em>.</h1>
+    <p class="sub">Modern relationships are harder than they used to be — and easier to walk away from. Whether you're trying to make something work, figure out what's broken, or just feel like yourself again inside your partnership, we can help.</p>
+    <div class="issue-hero-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+      <a href="#signs" class="cta outline"><span>What this looks like</span> <span class="arr">↓</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     2. OVERVIEW / STRENGTH BLOCK
+     Centered, narrow column. The "you're not alone" reframe.
+     =========================================================== -->
+<section class="strength pad" data-screen-label="02 Overview">
+  <div class="strength-inner">
+    <div class="eyebrow">The reality</div>
+    <h2 class="section-title">Loving someone is <em>complicated</em>. Staying in love is harder.</h2>
+    <p>Most men aren't taught how to do relationships well. We're taught to provide, to protect, to fix things. But the work of staying connected — actually being known by your partner over years — doesn't run on those instincts. It runs on something else, and it's a skill that can be learned.</p>
+    <p>If your relationship is struggling, that doesn't make you a bad partner or your partner a bad person. It means something needs attention. The earlier you give it attention, the more options you have.</p>
+    <p><em>This isn't about blame. It's about getting unstuck.</em></p>
+  </div>
+</section>
+
+<!-- ===========================================================
+     3. SIGNS — "HOW IT SHOWS UP"
+     Six tiles in a 3-column grid. Each is a different signal.
+     =========================================================== -->
+<section class="signs pad" id="signs" data-screen-label="03 Signs">
+  <div class="wrap">
+    <div class="signs-head">
+      <div class="eyebrow">How it shows up</div>
+      <h2 class="section-title">If any of this <em>sounds familiar</em>.</h2>
+      <p>Different men come in with different reasons. Some sound dramatic. Some sound mundane. None of them are reasons to wait.</p>
+    </div>
+
+    <div class="signs-grid">
+      <div class="sign-item">
+        <div class="sign-num">01</div>
+        <h3 class="sign-title">The distance is <em>growing</em>.</h3>
+        <p class="sign-desc">You used to talk about everything. Now you talk about logistics. The closeness is still in there somewhere, but you can't quite find it.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">02</div>
+        <h3 class="sign-title">The same fight, <em>on loop</em>.</h3>
+        <p class="sign-desc">Different surface, same underlying conflict. You both know how it's going to end before it even starts. Neither of you actually wants to be in it.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">03</div>
+        <h3 class="sign-title">You're <em>not yourself</em>.</h3>
+        <p class="sign-desc">You're walking on eggshells, holding things in, or feeling like a version of yourself you don't recognize. Something about who you are has gotten lost.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">04</div>
+        <h3 class="sign-title">Dating <em>isn't working</em>.</h3>
+        <p class="sign-desc">The apps, the dinners, the same pattern with a different person. You want a real partnership and don't know what's getting in the way.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">05</div>
+        <h3 class="sign-title">Considering <em>a major step</em>.</h3>
+        <p class="sign-desc">Moving in. Getting engaged. Trying for a kid. You want to make sure the foundation is solid before you build on top of it.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">06</div>
+        <h3 class="sign-title">You're thinking about <em>leaving</em>.</h3>
+        <p class="sign-desc">Or you can't stop wondering whether you should be. You want to know the answer before you do something you can't undo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     4. HOW WE HELP — 2-column with lifestyle portrait
+     =========================================================== -->
+<section class="help pad" data-screen-label="04 How We Help">
+  <div class="wrap">
+    <div class="help-grid">
+      <div class="help-text">
+        <div class="eyebrow">How we help</div>
+        <h2 class="section-title">A space to <em>say the things</em> you've been holding back.</h2>
+        <p>Your therapist will be a man who has sat with hundreds of guys working through the same questions. He won't tell you what to do. He won't take sides. He'll help you see what's actually going on, so you can decide.</p>
+        <p>Sessions are online, weekly or as needed. Most men start to feel some movement within the first three or four conversations. <em>It doesn't take years to feel the shift.</em></p>
+        <ul class="help-list">
+          <li>Communicate without escalating into the same fight.</li>
+          <li>Understand what you actually want, and what's getting in the way.</li>
+          <li>Stay connected to yourself inside the relationship.</li>
+          <li>Make hard decisions with clarity, not panic.</li>
+        </ul>
+      </div>
+      <div class="help-image-wrap">
+        <img src="assets/lifestyle-portrait.jpeg" alt="A man and his partner together at home">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     5. MID CTA BAND
+     Reuses the global .cta-band component.
+     =========================================================== -->
+<section class="cta-band" data-screen-label="05 CTA Band">
+  <div class="wrap">
+    <div class="cta-band-grid">
+      <h2>Book A Free Consultation With Our <em>Male Therapists</em>.</h2>
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     6. FAQ
+     Reuses the global .faq component. Edit questions per issue.
+     =========================================================== -->
+<section class="faq pad" data-screen-label="06 FAQ">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="eyebrow center">Common questions</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em>.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true">
+          <span>Will my partner need to come to <em>sessions</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>No. Anchor Men's Therapy is individual therapy for men. We work with you on your relationship from your seat. Many men find that doing the work solo first — without the partner in the room — is what makes them able to be in a healthier partnership.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What if I don't know if I want to <em>stay</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>That's a normal place to start. The goal isn't to talk you into anything. It's to help you understand what's really happening, what you actually want, and what staying or leaving would look like. Clarity comes first. Decisions come after that.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is this <em>couples</em> therapy?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>No. This is therapy for one person — you. If you want couples therapy, your therapist can help you find a referral. But many of the men we work with come to us specifically because they want a space that's just theirs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How long does this <em>take</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>It depends on what you're working on. Some men come in for six to twelve sessions to get a specific situation moving. Others stay longer because they've found something useful. You're never locked in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is the consultation <em>actually free</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes. The first call is a short conversation with a real therapist, at no cost. It's to figure out whether this is the right fit, what kind of support you're looking for, and which therapist on our team would be the best match.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     7. FINAL CTA
+     =========================================================== -->
+<section class="final-cta" id="book" data-screen-label="07 Final CTA">
+  <div class="wrap-narrow">
+    <div class="dot" aria-hidden="true"></div>
+    <h2>You don't have to figure this out <em>alone</em>.</h2>
+    <p>Book a free consultation. Speak to a real therapist. See whether this is the right fit, on your timing and your terms.</p>
+    <div class="final-cta-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     8. RELATED ISSUES (optional — remove or curate per page)
+     =========================================================== -->
+<section class="related pad" data-screen-label="08 Related Issues">
+  <div class="wrap">
+    <div class="related-head">
+      <div>
+        <div class="eyebrow">Closely related</div>
+        <h3>Other issues we help <em>men</em> work through</h3>
+      </div>
+      <a href="/" class="related-back"><span>All issues</span> <span class="arr">→</span></a>
+    </div>
+
+    <div class="related-grid">
+      <a class="related-card" href="https://anchormenstherapy.com/break-up-and-divorce">
+        <div class="name">Break Up &amp; Divorce</div>
+        <p class="desc">Process the grief, rebuild your identity, and find your footing again.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+      <a class="related-card" href="https://anchormenstherapy.com/sexlessness-and-intimacy">
+        <div class="name">Sexlessness &amp; Intimacy</div>
+        <p class="desc">Reconnect with your partner and rediscover physical and emotional closeness.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+      <a class="related-card" href="https://anchormenstherapy.com/infidelity-and-sexual-compulsion">
+        <div class="name">Infidelity &amp; Sexual Compulsion</div>
+        <p class="desc">Rebuild integrity, repair trust, and understand what's underneath the behaviour.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="site-footer"></div>
+
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script src="assets/site.js?v=8" defer></script>
+</body>
+</html>

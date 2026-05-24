@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work-Life Balance Therapy For Men — Anchor Men's Therapy</title>
+<meta name="description" content="Stop running on empty and start building a life that actually works. Male therapists help men find balance between career demands and personal wellbeing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<style>
+  .issue-hero {
+    position: relative;
+    min-height: 640px;
+    padding: 200px 0 80px;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .issue-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: var(--navy-deep);
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+  }
+  .issue-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(35,40,57,0.72) 0%, rgba(35,40,57,0.42) 35%, rgba(35,40,57,0.48) 65%, rgba(35,40,57,0.78) 100%),
+      linear-gradient(90deg, rgba(35,40,57,0.40) 0%, rgba(35,40,57,0) 45%);
+  }
+  .issue-hero .wrap { position: relative; z-index: 1; max-width: 1100px; }
+  .issue-hero .eyebrow { color: var(--cream-soft); opacity: 0.88; margin-bottom: 24px; }
+  .issue-hero .eyebrow::before { background: var(--cream-soft); opacity: 0.6; }
+  .issue-hero h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(44px, 5.6vw, 76px); line-height: 1.04; letter-spacing: -0.02em; color: var(--cream-soft); max-width: 22ch; margin: 0 0 24px; }
+  .issue-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .issue-hero .sub { max-width: 56ch; font-size: 17px; line-height: 1.7; color: var(--cream-soft); opacity: 0.92; margin-bottom: 40px; }
+  .issue-hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .issue-hero-actions .cta.outline { border-color: rgba(246, 244, 227, 0.45); color: var(--cream-soft); }
+  .issue-hero-actions .cta.outline:hover { background: var(--cream-soft); color: var(--navy-deep); border-color: var(--cream-soft); }
+
+  .signs { background: var(--cream); }
+  .signs-head { text-align: center; margin-bottom: 64px; }
+  .signs-head .eyebrow { color: var(--navy); margin-bottom: 24px; display: inline-block; }
+  .signs-head h2 { max-width: 22ch; margin: 0 auto 20px; }
+  .signs-head p { max-width: 56ch; margin: 0 auto; color: var(--slate); font-size: 16px; line-height: 1.75; }
+  .signs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
+  .sign-item { padding: 36px 32px 36px 0; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .sign-item:nth-child(3n) { border-right: none; padding-right: 0; }
+  .sign-item:nth-child(3n+1) { padding-left: 0; }
+  .sign-item:not(:nth-child(3n+1)) { padding-left: 32px; }
+  .sign-num { font-family: var(--mono); font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; }
+  .sign-title { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.2; color: var(--navy); margin-bottom: 12px; }
+  .sign-title em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .sign-desc { font-size: 14.5px; line-height: 1.7; color: var(--slate); }
+
+  .help { background: var(--paper); }
+  .help-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: center; }
+  .help-image-wrap { width: 100%; }
+  .help-image-wrap > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: 4px; }
+  .help-text .eyebrow { color: var(--navy); margin-bottom: 24px; display: inline-block; }
+  .help-text h2 { max-width: 18ch; margin-bottom: 28px; }
+  .help-text > p { font-size: 16px; line-height: 1.8; color: var(--slate); max-width: 52ch; margin-bottom: 18px; }
+  .help-text > p em { font-family: var(--serif); font-style: italic; color: var(--ink); font-weight: 500; }
+  .help-list { list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--line); }
+  .help-list li { padding: 18px 0 18px 32px; border-bottom: 1px solid var(--line); font-size: 15.5px; line-height: 1.55; color: var(--ink); position: relative; font-family: var(--serif); font-weight: 500; }
+  .help-list li::before { content: ''; position: absolute; left: 4px; top: 28px; width: 16px; height: 1px; background: var(--navy); }
+
+  .related { background: var(--cream); }
+  .related-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--line); gap: 24px; flex-wrap: wrap; }
+  .related-head .eyebrow { color: var(--navy); margin-bottom: 8px; }
+  .related-head h3 { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 34px; color: var(--navy); line-height: 1.1; }
+  .related-back { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--navy); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: gap .2s, color .2s; }
+  .related-back:hover { gap: 14px; color: var(--navy-deep); }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card { background: var(--paper); padding: 28px 26px 24px; display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; transition: transform .28s ease, background .28s ease, box-shadow .28s ease; border-radius: 4px; min-height: 220px; }
+  .related-card:hover { transform: translateY(-3px); background: var(--cream-soft); box-shadow: 0 6px 24px rgba(35,40,57,0.08); }
+  .related-card .name { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.2; color: var(--navy); }
+  .related-card .desc { font-size: 14px; line-height: 1.65; color: var(--slate); flex-grow: 1; }
+  .related-card .link { margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line-soft); font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--navy); display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: gap .25s; }
+  .related-card:hover .link { gap: 18px; }
+  .related-card .arr { transition: transform .25s; }
+  .related-card:hover .arr { transform: translateX(4px); }
+
+  @media (max-width: 1000px) {
+    .signs-grid { grid-template-columns: repeat(2, 1fr); }
+    .sign-item, .sign-item:nth-child(3n), .sign-item:nth-child(3n+1), .sign-item:not(:nth-child(3n+1)) { padding: 32px; border-right: 1px solid var(--line); }
+    .sign-item:nth-child(2n) { border-right: none; padding-right: 0; }
+    .sign-item:nth-child(2n+1) { padding-left: 0; }
+    .help-grid { grid-template-columns: 1fr; gap: 48px; }
+    .help-image-wrap { max-width: 480px; margin: 0 auto; order: -1; }
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .issue-hero { padding: 140px 0 64px; min-height: 540px; }
+    .issue-hero h1 { font-size: 40px; }
+    .issue-hero .sub { font-size: 15.5px; }
+    .signs-grid { grid-template-columns: 1fr; }
+    .sign-item, .sign-item:nth-child(2n), .sign-item:nth-child(2n+1) { padding: 28px 0; border-right: none; }
+    .related-grid { grid-template-columns: 1fr; }
+    .related-head { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- 1. HERO -->
+<section class="issue-hero" data-screen-label="01 Hero">
+  <div class="issue-hero-bg" aria-hidden="true" style="background-image: url('assets/work-life-balance-hero.jpeg');"></div>
+  <div class="wrap">
+    <div class="eyebrow">Therapy for Men &nbsp;&middot;&nbsp; <span class="var">Work-Life Balance</span></div>
+    <h1>Work-Life Balance Therapy <em>for Men</em>.</h1>
+    <p class="sub">You're constantly tired, always working, and never feeling like you're getting ahead. Our male therapists help men stop running on empty and build a life that actually works.</p>
+    <div class="issue-hero-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
+      <a href="#signs" class="cta outline"><span>What this looks like</span> <span class="arr">&darr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. OVERVIEW -->
+<section class="strength pad" data-screen-label="02 Overview">
+  <div class="strength-inner">
+    <div class="eyebrow">The reality</div>
+    <h2 class="section-title">You Can Build a Life That <em>Works</em>.</h2>
+    <p>You're constantly tired. You're always working, but you never feel like you're getting ahead. Your relationships are suffering, your health is declining, and the life you're building doesn't feel like the one you actually want.</p>
+    <p>Men are often taught that working harder is the answer — but grinding yourself into the ground isn't sustainable. True success includes your health, your relationships, and your mental well-being. Balance isn't about doing less — it's about doing things differently.</p>
+    <p><em>The goal isn't to work less. It's to live more.</em></p>
+  </div>
+</section>
+
+<!-- 3. SIGNS -->
+<section class="signs pad" id="signs" data-screen-label="03 Signs">
+  <div class="wrap">
+    <div class="signs-head">
+      <div class="eyebrow">How it shows up</div>
+      <h2 class="section-title">If any of this <em>sounds familiar</em>.</h2>
+      <p>Burnout doesn't happen overnight. It builds slowly — and by the time you notice, it's already deep. If any of this sounds familiar, it's time.</p>
+    </div>
+
+    <div class="signs-grid">
+      <div class="sign-item">
+        <div class="sign-num">01</div>
+        <h3 class="sign-title">Work is all you <em>think about</em>.</h3>
+        <p class="sign-desc">Even when you're off the clock, your brain is still there. Dinner with your family, weekend mornings, vacations — you're physically present but mentally somewhere else.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">02</div>
+        <h3 class="sign-title">Your health is <em>declining</em>.</h3>
+        <p class="sign-desc">Weight gain, poor sleep, headaches, chest tightness. Your body is keeping score even when you're not. You keep saying you'll deal with it later.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">03</div>
+        <h3 class="sign-title">Relationships are <em>suffering</em>.</h3>
+        <p class="sign-desc">Your partner feels neglected. Your kids are growing up without you noticing. Friends have stopped reaching out because you're never available.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">04</div>
+        <h3 class="sign-title">You can't <em>switch off</em>.</h3>
+        <p class="sign-desc">The emails, the notifications, the mental to-do list. Relaxation feels like wasted time. Even when you try to rest, the guilt doesn't let you.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">05</div>
+        <h3 class="sign-title">Sunday dread is <em>real</em>.</h3>
+        <p class="sign-desc">The anxiety starts building before the weekend is even over. You're not excited about Monday — you're dreading it. And that dread has become your normal.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">06</div>
+        <h3 class="sign-title">You've forgotten what you <em>enjoy</em>.</h3>
+        <p class="sign-desc">Hobbies, interests, the things that used to make you feel alive — they've been squeezed out by work. You can't remember the last time you did something just for yourself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. HOW WE HELP -->
+<section class="help pad" data-screen-label="04 How We Help">
+  <div class="wrap">
+    <div class="help-grid">
+      <div class="help-text">
+        <div class="eyebrow">How we help</div>
+        <h2 class="section-title">A space to figure out what <em>balance</em> actually looks like for you.</h2>
+        <p>Your therapist will be a man who understands the pressures of ambition, provision, and performance. He won't tell you to "just work less." He'll help you figure out what's actually sustainable — and what's quietly costing you everything.</p>
+        <p>Sessions are online, weekly or as needed. Many men find that even small shifts in how they think about work and rest lead to significant changes in how they feel. <em>Sustainable success beats burnout every time.</em></p>
+        <ul class="help-list">
+          <li>Set healthy boundaries around work and availability.</li>
+          <li>Reduce burnout and chronic exhaustion.</li>
+          <li>Rebuild presence and connection at home.</li>
+          <li>Rediscover the things that make life worth living.</li>
+        </ul>
+      </div>
+      <div class="help-image-wrap">
+        <img src="assets/lifestyle-portrait.jpeg" alt="A man finding balance between career and personal life">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CTA BAND -->
+<section class="cta-band" data-screen-label="05 CTA Band">
+  <div class="wrap">
+    <div class="cta-band-grid">
+      <h2>Book A Free Consultation With Our <em>Male Therapists</em>.</h2>
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="faq pad" data-screen-label="06 FAQ">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="eyebrow center">Common questions</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em>.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true">
+          <span>Is work-life balance even <em>possible</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes — but it looks different for everyone. Balance doesn't mean equal time in all areas. It means setting boundaries, prioritizing what matters, and making intentional choices rather than just reacting to demands.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Can therapy help me be more <em>productive</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Ironically, yes. When you address burnout, set boundaries, and manage stress effectively, you often become more focused and productive. Sustainable productivity beats grinding yourself into the ground every time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>What if my job demands <em>long hours</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Therapy won't change your job requirements, but it can help you navigate them more effectively. We help you set boundaries where possible, manage stress, and protect your well-being within the constraints of your career.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is the consultation <em>actually free</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes. The first call is a short conversation with a real therapist, at no cost. It's to figure out whether this is the right fit and which therapist would be the best match.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>I don't think I'm burned out — I just feel <em>stuck</em>.</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>That counts. You don't need a clinical diagnosis to benefit from therapy. Feeling stuck, uninspired, or like something is off is more than enough reason to start exploring what might need to change.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FINAL CTA -->
+<section class="final-cta" id="book" data-screen-label="07 Final CTA">
+  <div class="wrap-narrow">
+    <div class="dot" aria-hidden="true"></div>
+    <h2>You don't have to keep running on <em>empty</em>.</h2>
+    <p>Book a free consultation. Speak to a real therapist. See whether this is the right fit, on your timing and your terms.</p>
+    <div class="final-cta-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. RELATED ISSUES -->
+<section class="related pad" data-screen-label="08 Related Issues">
+  <div class="wrap">
+    <div class="related-head">
+      <div>
+        <div class="eyebrow">Closely related</div>
+        <h3>Other issues we help <em>men</em> work through</h3>
+      </div>
+      <a href="/" class="related-back"><span>All issues</span> <span class="arr">&rarr;</span></a>
+    </div>
+
+    <div class="related-grid">
+      <a class="related-card" href="https://anchormenstherapy.com/trauma-and-stress">
+        <div class="name">Trauma &amp; Stress</div>
+        <p class="desc">Heal from the past so it stops running your present.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+      <a class="related-card" href="https://anchormenstherapy.com/dating-and-marriage">
+        <div class="name">Dating &amp; Marriage</div>
+        <p class="desc">Navigate the complexities of modern relationships with confidence and clarity.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+      <a class="related-card" href="https://anchormenstherapy.com/fatherhood">
+        <div class="name">Fatherhood</div>
+        <p class="desc">Step into fatherhood with purpose — whether you're expecting, new, or struggling.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script src="assets/site.js?v=8" defer></script>
+</body>
+</html>

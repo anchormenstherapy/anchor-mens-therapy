@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porn &amp; Addiction Therapy For Men — Anchor Men's Therapy</title>
+<meta name="description" content="Break the cycle that's controlling your life and reclaim your freedom. Male therapists help men overcome porn addiction, gambling, and other compulsive behaviors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=8">
+
+<style>
+  .issue-hero {
+    position: relative;
+    min-height: 640px;
+    padding: 200px 0 80px;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .issue-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: var(--navy-deep);
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+  }
+  .issue-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(35,40,57,0.72) 0%, rgba(35,40,57,0.42) 35%, rgba(35,40,57,0.48) 65%, rgba(35,40,57,0.78) 100%),
+      linear-gradient(90deg, rgba(35,40,57,0.40) 0%, rgba(35,40,57,0) 45%);
+  }
+  .issue-hero .wrap { position: relative; z-index: 1; max-width: 1100px; }
+  .issue-hero .eyebrow { color: var(--cream-soft); opacity: 0.88; margin-bottom: 24px; }
+  .issue-hero .eyebrow::before { background: var(--cream-soft); opacity: 0.6; }
+  .issue-hero h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(44px, 5.6vw, 76px); line-height: 1.04; letter-spacing: -0.02em; color: var(--cream-soft); max-width: 22ch; margin: 0 0 24px; }
+  .issue-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .issue-hero .sub { max-width: 56ch; font-size: 17px; line-height: 1.7; color: var(--cream-soft); opacity: 0.92; margin-bottom: 40px; }
+  .issue-hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .issue-hero-actions .cta.outline { border-color: rgba(246, 244, 227, 0.45); color: var(--cream-soft); }
+  .issue-hero-actions .cta.outline:hover { background: var(--cream-soft); color: var(--navy-deep); border-color: var(--cream-soft); }
+
+  .signs { background: var(--cream); }
+  .signs-head { text-align: center; margin-bottom: 64px; }
+  .signs-head .eyebrow { color: var(--navy); margin-bottom: 24px; display: inline-block; }
+  .signs-head h2 { max-width: 22ch; margin: 0 auto 20px; }
+  .signs-head p { max-width: 56ch; margin: 0 auto; color: var(--slate); font-size: 16px; line-height: 1.75; }
+  .signs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
+  .sign-item { padding: 36px 32px 36px 0; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .sign-item:nth-child(3n) { border-right: none; padding-right: 0; }
+  .sign-item:nth-child(3n+1) { padding-left: 0; }
+  .sign-item:not(:nth-child(3n+1)) { padding-left: 32px; }
+  .sign-num { font-family: var(--mono); font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; }
+  .sign-title { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.2; color: var(--navy); margin-bottom: 12px; }
+  .sign-title em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .sign-desc { font-size: 14.5px; line-height: 1.7; color: var(--slate); }
+
+  .help { background: var(--paper); }
+  .help-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: center; }
+  .help-image-wrap { width: 100%; }
+  .help-image-wrap > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: 4px; }
+  .help-text .eyebrow { color: var(--navy); margin-bottom: 24px; display: inline-block; }
+  .help-text h2 { max-width: 18ch; margin-bottom: 28px; }
+  .help-text > p { font-size: 16px; line-height: 1.8; color: var(--slate); max-width: 52ch; margin-bottom: 18px; }
+  .help-text > p em { font-family: var(--serif); font-style: italic; color: var(--ink); font-weight: 500; }
+  .help-list { list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--line); }
+  .help-list li { padding: 18px 0 18px 32px; border-bottom: 1px solid var(--line); font-size: 15.5px; line-height: 1.55; color: var(--ink); position: relative; font-family: var(--serif); font-weight: 500; }
+  .help-list li::before { content: ''; position: absolute; left: 4px; top: 28px; width: 16px; height: 1px; background: var(--navy); }
+
+  .related { background: var(--cream); }
+  .related-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--line); gap: 24px; flex-wrap: wrap; }
+  .related-head .eyebrow { color: var(--navy); margin-bottom: 8px; }
+  .related-head h3 { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 34px; color: var(--navy); line-height: 1.1; }
+  .related-back { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--navy); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: gap .2s, color .2s; }
+  .related-back:hover { gap: 14px; color: var(--navy-deep); }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card { background: var(--paper); padding: 28px 26px 24px; display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; transition: transform .28s ease, background .28s ease, box-shadow .28s ease; border-radius: 4px; min-height: 220px; }
+  .related-card:hover { transform: translateY(-3px); background: var(--cream-soft); box-shadow: 0 6px 24px rgba(35,40,57,0.08); }
+  .related-card .name { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.2; color: var(--navy); }
+  .related-card .desc { font-size: 14px; line-height: 1.65; color: var(--slate); flex-grow: 1; }
+  .related-card .link { margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line-soft); font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--navy); display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: gap .25s; }
+  .related-card:hover .link { gap: 18px; }
+  .related-card .arr { transition: transform .25s; }
+  .related-card:hover .arr { transform: translateX(4px); }
+
+  @media (max-width: 1000px) {
+    .signs-grid { grid-template-columns: repeat(2, 1fr); }
+    .sign-item, .sign-item:nth-child(3n), .sign-item:nth-child(3n+1), .sign-item:not(:nth-child(3n+1)) { padding: 32px; border-right: 1px solid var(--line); }
+    .sign-item:nth-child(2n) { border-right: none; padding-right: 0; }
+    .sign-item:nth-child(2n+1) { padding-left: 0; }
+    .help-grid { grid-template-columns: 1fr; gap: 48px; }
+    .help-image-wrap { max-width: 480px; margin: 0 auto; order: -1; }
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .issue-hero { padding: 140px 0 64px; min-height: 540px; }
+    .issue-hero h1 { font-size: 40px; }
+    .issue-hero .sub { font-size: 15.5px; }
+    .signs-grid { grid-template-columns: 1fr; }
+    .sign-item, .sign-item:nth-child(2n), .sign-item:nth-child(2n+1) { padding: 28px 0; border-right: none; }
+    .related-grid { grid-template-columns: 1fr; }
+    .related-head { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- 1. HERO -->
+<section class="issue-hero" data-screen-label="01 Hero">
+  <div class="issue-hero-bg" aria-hidden="true" style="background-image: url('assets/porn-and-other-addictions-hero.jpeg');"></div>
+  <div class="wrap">
+    <div class="eyebrow">Therapy for Men &nbsp;&middot;&nbsp; <span class="var">Porn &amp; Other Addictions</span></div>
+    <h1>Porn &amp; Addiction Therapy <em>for Men</em>.</h1>
+    <p class="sub">Addiction isn't always about substances. Porn, gambling, gaming — whatever the habit, it's controlling you instead of the other way around. Our male therapists help you break the cycle.</p>
+    <div class="issue-hero-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
+      <a href="#signs" class="cta outline"><span>What this looks like</span> <span class="arr">&darr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. OVERVIEW -->
+<section class="strength pad" data-screen-label="02 Overview">
+  <div class="strength-inner">
+    <div class="eyebrow">The reality</div>
+    <h2 class="section-title">You Can Break <em>Free</em>.</h2>
+    <p>Addiction isn't always about drugs or alcohol. It can be pornography, gambling, gaming, work, or anything else that you turn to as an escape — and that's now controlling you instead of the other way around.</p>
+    <p>The shame and secrecy that come with behavioral addictions can feel suffocating. You want to stop, but every time you try, you find yourself back in the same pattern. It's not about willpower — it's about understanding what's driving the behavior.</p>
+    <p><em>Recovery starts with honesty. And honesty starts with having someone safe to be honest with.</em></p>
+  </div>
+</section>
+
+<!-- 3. SIGNS -->
+<section class="signs pad" id="signs" data-screen-label="03 Signs">
+  <div class="wrap">
+    <div class="signs-head">
+      <div class="eyebrow">How it shows up</div>
+      <h2 class="section-title">If any of this <em>sounds familiar</em>.</h2>
+      <p>Behavioral addictions don't always look dramatic. They can be quiet, hidden, and gradual. But the patterns are unmistakable.</p>
+    </div>
+
+    <div class="signs-grid">
+      <div class="sign-item">
+        <div class="sign-num">01</div>
+        <h3 class="sign-title">The habit has become a <em>compulsion</em>.</h3>
+        <p class="sign-desc">What started as something occasional has become something you can't control. You do it even when you don't want to — even when you know it's hurting you.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">02</div>
+        <h3 class="sign-title">You're hiding it from <em>everyone</em>.</h3>
+        <p class="sign-desc">You've built a wall of secrecy around the behavior. The fear of being found out is constant — and it's isolating you from the people who matter.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">03</div>
+        <h3 class="sign-title">It's affecting your <em>relationships</em>.</h3>
+        <p class="sign-desc">Emotional distance, lost trust, declining intimacy. The people closest to you can feel something is wrong, even if they don't know what it is.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">04</div>
+        <h3 class="sign-title">You've tried to stop and <em>can't</em>.</h3>
+        <p class="sign-desc">You've made promises to yourself — and broken them. Every failed attempt makes the shame worse, which makes the behavior harder to stop.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">05</div>
+        <h3 class="sign-title">Shame and guilt are <em>constant</em>.</h3>
+        <p class="sign-desc">You feel disgusted with yourself after every episode. The cycle of use, guilt, and more use is exhausting and relentless.</p>
+      </div>
+      <div class="sign-item">
+        <div class="sign-num">06</div>
+        <h3 class="sign-title">You need more to feel the <em>same</em>.</h3>
+        <p class="sign-desc">Escalation. What used to satisfy the urge doesn't anymore. You're going further, spending more time, taking bigger risks — and it scares you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. HOW WE HELP -->
+<section class="help pad" data-screen-label="04 How We Help">
+  <div class="wrap">
+    <div class="help-grid">
+      <div class="help-text">
+        <div class="eyebrow">How we help</div>
+        <h2 class="section-title">A space where shame has <em>no power</em>.</h2>
+        <p>Your therapist will be a man who has sat with many men carrying the exact same secret. He won't judge you. He won't lecture you. He'll help you understand what's underneath the behavior — and build a path out.</p>
+        <p>Sessions are online, weekly or as needed. Many men feel relief just from finally saying it out loud to someone who understands. <em>You don't have to fix this alone.</em></p>
+        <ul class="help-list">
+          <li>Break free from compulsive patterns and cycles.</li>
+          <li>Understand the root causes driving the behavior.</li>
+          <li>Rebuild trust in your relationships.</li>
+          <li>Develop healthier coping strategies that actually last.</li>
+        </ul>
+      </div>
+      <div class="help-image-wrap">
+        <img src="assets/lifestyle-portrait.jpeg" alt="A man reclaiming control and clarity through therapy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CTA BAND -->
+<section class="cta-band" data-screen-label="05 CTA Band">
+  <div class="wrap">
+    <div class="cta-band-grid">
+      <h2>Book A Free Consultation With Our <em>Male Therapists</em>.</h2>
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="faq pad" data-screen-label="06 FAQ">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="eyebrow center">Common questions</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em>.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true">
+          <span>What types of addiction do you <em>treat</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>We work with men struggling with pornography, gambling, gaming, work addiction, and other compulsive behaviors. If you're concerned about something controlling your life, we can help.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>How long does addiction <em>therapy</em> take?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Recovery timelines vary. Some men see significant progress in 3 to 6 months, while others benefit from longer-term support. Your therapist will work with you to create a realistic plan based on your unique situation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Will therapy make me quit <em>completely</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>That depends on the behavior and your goals. For some addictions, complete abstinence is necessary. For others, moderation may be possible. Your therapist will help you determine what's healthiest for you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Is the consultation <em>actually free</em>?</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes. The first call is a short conversation with a real therapist, at no cost. It's to figure out whether this is the right fit, what kind of support you're looking for, and which therapist would be the best match.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>I'm too ashamed to talk about <em>this</em>.</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>That's exactly why we exist. Shame thrives in secrecy — and our therapists have heard it all before. The first session is just a conversation. You go at your own pace, and nothing you say will surprise us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FINAL CTA -->
+<section class="final-cta" id="book" data-screen-label="07 Final CTA">
+  <div class="wrap-narrow">
+    <div class="dot" aria-hidden="true"></div>
+    <h2>You don't have to keep living in <em>the cycle</em>.</h2>
+    <p>Book a free consultation. Speak to a real therapist. See whether this is the right fit, on your timing and your terms.</p>
+    <div class="final-cta-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. RELATED ISSUES -->
+<section class="related pad" data-screen-label="08 Related Issues">
+  <div class="wrap">
+    <div class="related-head">
+      <div>
+        <div class="eyebrow">Closely related</div>
+        <h3>Other issues we help <em>men</em> work through</h3>
+      </div>
+      <a href="/" class="related-back"><span>All issues</span> <span class="arr">&rarr;</span></a>
+    </div>
+
+    <div class="related-grid">
+      <a class="related-card" href="https://anchormenstherapy.com/infidelity-and-sexual-compulsion">
+        <div class="name">Infidelity &amp; Sexual Compulsion</div>
+        <p class="desc">Rebuild integrity, repair trust, and understand what's underneath the behaviour.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+      <a class="related-card" href="https://anchormenstherapy.com/trauma-and-stress">
+        <div class="name">Trauma &amp; Stress</div>
+        <p class="desc">Heal from the past so it stops running your present.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+      <a class="related-card" href="https://anchormenstherapy.com/work-life-balance">
+        <div class="name">Work-Life Balance</div>
+        <p class="desc">Stop running on empty and reclaim the time and energy for what matters most.</p>
+        <div class="link"><span>Explore</span> <span class="arr">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script src="assets/site.js?v=8" defer></script>
+</body>
+</html>

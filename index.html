@@ -243,8 +243,16 @@
     .home-hero { padding: 140px 0 80px; min-height: 600px; }
     .home-hero h1 { font-size: 42px; }
     .home-hero .sub { font-size: 15.5px; }
+    .home-hero .eyebrow.center {
+      font-size: 9.5px;
+      letter-spacing: 0.20em;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+    .home-hero .eyebrow.center::before,
+    .home-hero .eyebrow.center::after { display: none; }
     .home-hero-bg {
-      background-position: center 35%;
+      background-position: 22% 40%;
     }
     .home-stats { gap: 32px; margin-top: 48px; padding-top: 32px; }
     .home-stat-num { font-size: 30px; }

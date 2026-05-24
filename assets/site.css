@@ -1263,18 +1263,12 @@
   @media (max-width: 1024px) {
     .wrap, header.site, .pad, .pad-sm { padding-left: 32px; padding-right: 32px; }
     header.site.solid { padding-left: 32px; padding-right: 32px; }
-    .issues-head, .outcomes-grid, .founder-grid, .footer-top {
+    .issues-head, .outcomes-grid, .footer-top {
       grid-template-columns: 1fr;
       gap: 48px;
     }
     .issue-grid { grid-template-columns: repeat(2, 1fr); }
     .issues-cat, .strength-inner { position: static; }
-    .founder-image-wrap {
-      position: relative;
-      max-width: 280px;
-      margin: 0 auto;
-      width: 100%;
-    }
     .why-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
     .why-col, .why-col:nth-child(2), .why-col:last-child {
       padding: 36px 0 0 0;
@@ -1297,24 +1291,6 @@
     .why-grid, .team-grid { grid-template-columns: 1fr; }
     .why-grid { border-top: none; }
     .issue-grid { grid-template-columns: 1fr; }
-    .founder-grid { gap: 32px; }
-    .founder-image-wrap {
-      max-width: 220px;
-      aspect-ratio: auto;
-      position: relative;
-      background: transparent;
-    }
-    .founder-image-wrap > img {
-      position: static;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1/1;
-      display: block;
-    }
-    .founder-image-wrap::after { display: none; }
-    .founder-image-wrap > img { object-position: center 15%; }
-    .founder-text .section-title { margin-bottom: 28px; }
-    .founder-text .lede { padding-bottom: 24px; margin-bottom: 24px; font-size: 19px; }
     .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
     .footer-bottom > div:last-child a:first-child { margin-left: 0; }
   }

@@ -15,6 +15,24 @@
     { "source": "/overcoming-stigma", "destination": "/blog/why-men-avoid-therapy", "permanent": true },
     { "source": "/relationship-communication", "destination": "/dating-and-marriage", "permanent": true },
     { "source": "/therapy-education", "destination": "/blog", "permanent": true },
-    { "source": "/therapy-education-overcoming-stigma", "destination": "/blog/why-men-avoid-therapy", "permanent": true }
+    { "source": "/therapy-education-overcoming-stigma", "destination": "/blog/why-men-avoid-therapy", "permanent": true },
+
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "online-therapy-effective-for-men" }], "destination": "/blog/online-therapy-effective-for-men", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "male-therapist-vs-female-therapist-for-men" }], "destination": "/blog/male-therapist-vs-female-therapist-for-men", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "deal-with-anger-as-a-man" }], "destination": "/blog/deal-with-anger-as-a-man", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "first-therapy-session-for-men" }], "destination": "/blog/first-therapy-session-for-men", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "divorce-and-mens-mental-health" }], "destination": "/blog/divorce-and-mens-mental-health", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "signs-your-marriage-is-in-trouble" }], "destination": "/blog/signs-your-marriage-is-in-trouble", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "why-men-avoid-therapy" }], "destination": "/blog/why-men-avoid-therapy", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "porn-recovery-group-quiz" }], "destination": "/blog/porn-recovery-group-quiz", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "weekly-porn-recovery-meetings-create-lasting-change" }], "destination": "/blog/weekly-porn-recovery-meetings-create-lasting-change", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "anonymous-online-support-weekly-recovery-groups" }], "destination": "/blog/anonymous-online-support-weekly-recovery-groups", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "what-happens-porn-recovery-group" }], "destination": "/blog/what-happens-porn-recovery-group", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "shame-porn-cycle" }], "destination": "/blog/shame-porn-cycle", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "failed-attempts-porn-addiction-recovery" }], "destination": "/blog/failed-attempts-porn-addiction-recovery", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "signs-help-with-porn-addiction" }], "destination": "/blog/signs-help-with-porn-addiction", "permanent": true },
+    { "source": "/BlogPost", "has": [{ "type": "query", "key": "slug", "value": "porn-addiction-isloating" }], "destination": "/blog/porn-addiction-isloating", "permanent": true },
+
+    { "source": "/BlogPost", "destination": "/blog", "permanent": true }
   ]
 }

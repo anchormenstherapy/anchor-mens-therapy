@@ -1,4 +1,20 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/anger-emotional-regulation", "destination": "/blog/deal-with-anger-as-a-man", "permanent": true },
+    { "source": "/anger-management", "destination": "/blog/deal-with-anger-as-a-man", "permanent": true },
+    { "source": "/compulsive-behaviors-addiction", "destination": "/porn-and-other-addictions", "permanent": true },
+    { "source": "/compulsive-behaviors-addiction-porn-addiction", "destination": "/porn-and-other-addictions", "permanent": true },
+    { "source": "/divorce-and-starting-over", "destination": "/break-up-and-divorce", "permanent": true },
+    { "source": "/first-time-therapy", "destination": "/blog/first-therapy-session-for-men", "permanent": true },
+    { "source": "/life-transitions", "destination": "/trauma-and-stress", "permanent": true },
+    { "source": "/male-therapists", "destination": "/jordan-j-caron", "permanent": true },
+    { "source": "/marriage-communication", "destination": "/dating-and-marriage", "permanent": true },
+    { "source": "/online-therapy", "destination": "/blog/online-therapy-effective-for-men", "permanent": true },
+    { "source": "/overcoming-stigma", "destination": "/blog/why-men-avoid-therapy", "permanent": true },
+    { "source": "/relationship-communication", "destination": "/dating-and-marriage", "permanent": true },
+    { "source": "/therapy-education", "destination": "/blog", "permanent": true },
+    { "source": "/therapy-education-overcoming-stigma", "destination": "/blog/why-men-avoid-therapy", "permanent": true }
+  ]
 }

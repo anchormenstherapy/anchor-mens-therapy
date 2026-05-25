@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor Men's Therapy — Online Therapy & Counselling for Men in Canada & USA</title>
+<meta name="description" content="Anchor Men's Therapy connects men across Canada and the United States with male therapists who specialize in the issues men actually face. Book a free consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="preload" href="assets/site.css?v=8" as="style">
+<link rel="stylesheet" href="assets/site.css?v=8">
+<style>
+  /* Home-specific overrides for the locations grid sections */
+  .home-hero {
+    position: relative;
+    min-height: 720px;
+    padding: 200px 0 96px;
+    text-align: center;
+    color: var(--cream-soft);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .home-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      url('assets/homepage-hero.webp') center 40% / cover no-repeat,
+      linear-gradient(135deg, #2a2f44 0%, #3b4566 60%, #565f7a 100%);
+    background-color: var(--navy-deep);
+    z-index: -2;
+  }
+  .home-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(35,40,57,0.78) 0%, rgba(35,40,57,0.55) 35%, rgba(35,40,57,0.58) 65%, rgba(35,40,57,0.82) 100%),
+      linear-gradient(90deg, rgba(35,40,57,0.30) 0%, rgba(35,40,57,0) 35%, rgba(35,40,57,0) 65%, rgba(35,40,57,0.30) 100%);
+  }
+  .home-hero .wrap { position: relative; z-index: 1; }
+  .home-hero .eyebrow {
+    color: var(--cream-soft);
+    opacity: 0.9;
+    margin-bottom: 28px;
+  }
+  .home-hero .eyebrow::before { background: var(--cream-soft); opacity: 0.7; }
+  .home-hero h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(46px, 6vw, 84px);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--cream-soft);
+    max-width: 18ch;
+    margin: 0 auto 28px;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.25);
+  }
+  .home-hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .home-hero .sub {
+    max-width: 58ch;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--cream-soft);
+    opacity: 0.92;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.25);
+  }
+  .home-hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .home-hero-actions .cta.outline {
+    border-color: rgba(246, 244, 227, 0.45);
+    color: var(--cream-soft);
+  }
+  .home-hero-actions .cta.outline:hover {
+    background: var(--cream-soft);
+    color: var(--navy-deep);
+    border-color: var(--cream-soft);
+  }
+
+  .home-stats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(246, 244, 227, 0.22);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .home-stat {
+    text-align: center;
+  }
+  .home-stat-num {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 38px;
+    line-height: 1;
+    color: var(--cream-soft);
+    margin-bottom: 8px;
+  }
+  .home-stat-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cream-soft);
+    opacity: 0.75;
+  }
+
+  .loc-section { background: var(--cream); padding: 96px 0 64px; }
+  .loc-section.last { padding-bottom: 140px; }
+  .loc-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .loc-meta-left .eyebrow { color: var(--navy); margin-bottom: 12px; }
+  .loc-meta h2 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.1;
+    color: var(--navy);
+  }
+  .loc-meta-right {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+
+  .city-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .city-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px;
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    text-decoration: none;
+    transition: background .25s ease;
+    min-height: 150px;
+    position: relative;
+  }
+  .city-tile:nth-child(4n) { border-right: none; padding-right: 0; }
+  .city-tile:nth-child(4n+1) { padding-left: 0; }
+  .city-tile:hover { background: rgba(172, 186, 196, 0.10); }
+  .city-tile.live::before {
+    content: '';
+    position: absolute;
+    top: 28px; right: 28px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent-deep);
+  }
+  .city-tile:nth-child(4n).live::before { right: 0; }
+  .city-name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.1;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .city-region {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .city-link {
+    margin-top: 22px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--navy);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap .25s, color .25s;
+  }
+  .city-tile.coming .city-link { color: var(--mute); }
+  .city-tile.live:hover .city-link { gap: 14px; color: var(--navy-deep); }
+  .city-tile .arr { display: inline-block; transition: transform .25s; }
+  .city-tile.live:hover .arr { transform: translateX(4px); }
+
+  @media (max-width: 1100px) {
+    .city-grid { grid-template-columns: repeat(3, 1fr); }
+    .city-tile,
+    .city-tile:nth-child(4n),
+    .city-tile:nth-child(4n+1) {
+      padding: 28px;
+      border-right: 1px solid var(--line);
+    }
+    .city-tile:nth-child(3n) { border-right: none; padding-right: 0; }
+    .city-tile:nth-child(3n+1) { padding-left: 0; }
+    .city-tile:nth-child(3n).live::before { right: 0; }
+  }
+  @media (max-width: 760px) {
+    .city-grid { grid-template-columns: repeat(2, 1fr); }
+    .city-tile,
+    .city-tile:nth-child(3n),
+    .city-tile:nth-child(3n+1) {
+      padding: 26px;
+      border-right: 1px solid var(--line);
+    }
+    .city-tile:nth-child(2n) { border-right: none; padding-right: 0; }
+    .city-tile:nth-child(2n+1) { padding-left: 0; }
+    .city-tile:nth-child(2n).live::before { right: 0; }
+    .city-tile:nth-child(odd).live::before { right: 26px; }
+  }
+  @media (max-width: 480px) {
+    .city-grid { grid-template-columns: 1fr; }
+    .city-tile,
+    .city-tile:nth-child(2n) {
+      border-right: none;
+      padding: 26px 0 !important;
+    }
+    .city-tile.live::before { right: 0 !important; }
+    .loc-meta { flex-direction: column; align-items: flex-start; }
+    .home-hero { padding: 140px 0 80px; min-height: 600px; }
+    .home-hero h1 { font-size: 42px; }
+    .home-hero .sub { font-size: 15.5px; }
+    .home-hero .eyebrow.center {
+      font-size: 9.5px;
+      letter-spacing: 0.20em;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+    .home-hero .eyebrow.center::before,
+    .home-hero .eyebrow.center::after { display: none; }
+    .home-hero-bg {
+      background-position: 22% 40%;
+    }
+    .home-stats { gap: 32px; margin-top: 48px; padding-top: 32px; }
+    .home-stat-num { font-size: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="site-header"></div>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="home-hero" data-screen-label="01 Home Hero">
+  <div class="home-hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow center">Online therapy &nbsp;·&nbsp; for men only</div>
+    <h1>Therapy &amp; Counselling, designed <em>for men</em>.</h1>
+    <p class="sub">Male therapists who understand the pressure of work, relationships, and life transitions. Online sessions across Canada and the United States, with a free first consultation.</p>
+    <div class="home-hero-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+      <a href="#locations" class="cta outline"><span>Find Your City</span> <span class="arr">↓</span></a>
+    </div>
+
+    <div class="home-stats">
+      <div class="home-stat">
+        <div class="home-stat-num">31</div>
+        <div class="home-stat-label">Cities Served</div>
+      </div>
+      <div class="home-stat">
+        <div class="home-stat-num">100%</div>
+        <div class="home-stat-label">Male Therapists</div>
+      </div>
+      <div class="home-stat">
+        <div class="home-stat-num">Free</div>
+        <div class="home-stat-label">First Consultation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS — Canada -->
+<section class="loc-section" id="locations" data-screen-label="02 Canadian Cities">
+  <div class="wrap">
+    <div class="loc-meta">
+      <div class="loc-meta-left">
+        <div class="eyebrow">Cities we serve · Canada</div>
+        <h2>Canadian Cities</h2>
+      </div>
+      <div class="loc-meta-right">
+        <span style="display:inline-flex;align-items:center;gap:8px;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-deep);"></span> Live</span>
+      </div>
+    </div>
+
+    <div class="city-grid">
+      <a class="city-tile live" href="/toronto"><div><div class="city-name">Toronto</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/vancouver"><div><div class="city-name">Vancouver</div><div class="city-region">British Columbia · BC</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/montreal"><div><div class="city-name">Montreal</div><div class="city-region">Quebec · QC</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/calgary"><div><div class="city-name">Calgary</div><div class="city-region">Alberta · AB</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/edmonton"><div><div class="city-name">Edmonton</div><div class="city-region">Alberta · AB</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/ottawa"><div><div class="city-name">Ottawa</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/winnipeg"><div><div class="city-name">Winnipeg</div><div class="city-region">Manitoba · MB</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/hamilton"><div><div class="city-name">Hamilton</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/mississauga"><div><div class="city-name">Mississauga</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/london"><div><div class="city-name">London</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/markham"><div><div class="city-name">Markham</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/vaughan"><div><div class="city-name">Vaughan</div><div class="city-region">Ontario · ON</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/halifax"><div><div class="city-name">Halifax</div><div class="city-region">Nova Scotia · NS</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/victoria"><div><div class="city-name">Victoria</div><div class="city-region">British Columbia · BC</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/burnaby"><div><div class="city-name">Burnaby</div><div class="city-region">British Columbia · BC</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/saskatoon"><div><div class="city-name">Saskatoon</div><div class="city-region">Saskatchewan · SK</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS — USA -->
+<section class="loc-section last" data-screen-label="03 USA Cities">
+  <div class="wrap">
+    <div class="loc-meta">
+      <div class="loc-meta-left">
+        <div class="eyebrow">Cities we serve · USA</div>
+        <h2>USA Cities</h2>
+      </div>
+      <div class="loc-meta-right">
+        <span style="display:inline-flex;align-items:center;gap:8px;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-deep);"></span> Live</span>
+      </div>
+    </div>
+
+    <div class="city-grid">
+      <a class="city-tile live" href="/new-york-city"><div><div class="city-name">New York City</div><div class="city-region">New York · NY</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/los-angeles"><div><div class="city-name">Los Angeles</div><div class="city-region">California · CA</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/chicago"><div><div class="city-name">Chicago</div><div class="city-region">Illinois · IL</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/houston"><div><div class="city-name">Houston</div><div class="city-region">Texas · TX</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/dallas"><div><div class="city-name">Dallas</div><div class="city-region">Texas · TX</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/san-antonio"><div><div class="city-name">San Antonio</div><div class="city-region">Texas · TX</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/san-diego"><div><div class="city-name">San Diego</div><div class="city-region">California · CA</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/philadelphia"><div><div class="city-name">Philadelphia</div><div class="city-region">Pennsylvania · PA</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/phoenix"><div><div class="city-name">Phoenix</div><div class="city-region">Arizona · AZ</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/chandler"><div><div class="city-name">Chandler</div><div class="city-region">Arizona · AZ</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/indianapolis"><div><div class="city-name">Indianapolis</div><div class="city-region">Indiana · IN</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/jacksonville"><div><div class="city-name">Jacksonville</div><div class="city-region">Florida · FL</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/columbus"><div><div class="city-name">Columbus</div><div class="city-region">Ohio · OH</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/madison"><div><div class="city-name">Madison</div><div class="city-region">Wisconsin · WI</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/reno"><div><div class="city-name">Reno</div><div class="city-region">Nevada · NV</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+      <a class="city-tile live" href="/anchorage"><div><div class="city-name">Anchorage</div><div class="city-region">Alaska · AK</div></div><span class="city-link"><span>View Page</span> <span class="arr">→</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" data-screen-label="04 Final CTA">
+  <div class="wrap-narrow">
+    <div class="dot" aria-hidden="true"></div>
+    <h2>Don't see your city? <em>Book anyway</em>.</h2>
+    <p>Because every session is online, you can work with any of our therapists regardless of where you live in Canada or the United States. Book a free consultation and we'll match you with the right fit.</p>
+    <div class="final-cta-actions">
+      <a href="https://anchormenstherapy.com/book-consultation" class="cta"><span>Book A Free Consultation</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="site-footer"></div>
+
+<script src="assets/header.js?v=8" defer></script>
+<script src="assets/footer.js?v=8" defer></script>
+<script src="assets/site.js?v=8" defer></script>
+</body>
+</html>

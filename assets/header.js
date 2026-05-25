@@ -62,8 +62,11 @@
       ).join('');
       return `
         <div class="mobile-group">
-          <div class="mobile-group-label">${item.label}</div>
-          ${subs}
+          <button class="mobile-group-toggle" type="button" aria-expanded="false">
+            <span>${item.label}</span>
+            <span class="mobile-arrow" aria-hidden="true"></span>
+          </button>
+          <div class="mobile-group-subs">${subs}</div>
         </div>
       `;
     }
@@ -123,21 +126,36 @@
   }
 
   function wireUp() {
-    // Dropdown click toggle (touch)
+    // Desktop dropdown — hover intent + click toggle
     document.querySelectorAll('.nav-item').forEach(item => {
       const trigger = item.querySelector('.nav-trigger');
       if (!trigger) return;
+      let closeTimer = null;
+
+      const openMenu = () => {
+        clearTimeout(closeTimer);
+        document.querySelectorAll('.nav-item.open').forEach(o => {
+          if (o !== item) {
+            o.classList.remove('open');
+            o.querySelector('.nav-trigger')?.setAttribute('aria-expanded', 'false');
+          }
+        });
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      };
+      const closeMenu = () => {
+        closeTimer = setTimeout(() => {
+          item.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }, 120);
+      };
+
+      item.addEventListener('mouseenter', openMenu);
+      item.addEventListener('mouseleave', closeMenu);
       trigger.addEventListener('click', (e) => {
         e.preventDefault();
-        const wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.nav-item.open').forEach(o => {
-          o.classList.remove('open');
-          o.querySelector('.nav-trigger')?.setAttribute('aria-expanded', 'false');
-        });
-        if (!wasOpen) {
-          item.classList.add('open');
-          trigger.setAttribute('aria-expanded', 'true');
-        }
+        if (item.classList.contains('open')) closeMenu();
+        else openMenu();
       });
     });
     document.addEventListener('click', (e) => {
@@ -161,6 +179,16 @@
       window.addEventListener('scroll', tick, { passive: true });
       tick();
     }
+
+    // Mobile group toggles
+    document.querySelectorAll('.mobile-group-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const group = btn.closest('.mobile-group');
+        const wasOpen = group.classList.contains('open');
+        group.classList.toggle('open');
+        btn.setAttribute('aria-expanded', wasOpen ? 'false' : 'true');
+      });
+    });
 
     // Hamburger
     const ham = document.querySelector('.hamburger');

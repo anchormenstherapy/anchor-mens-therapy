@@ -19,7 +19,7 @@
         { label: 'Work-Life Balance',              href: '/work-life-balance' },
         { label: 'Sexlessness & Intimacy',         href: '/sexlessness-and-intimacy' },
         { label: 'Infidelity & Sexual Compulsion', href: '/infidelity-and-sexual-compulsion' },
-        { label: 'Porn & Other Addictions',        href: '/porn-and-other-addictions' },
+        { label: 'Porn & Recovery',                  href: '/porn-and-other-addictions' },
     ]},
     { type: 'dropdown', label: 'Locations', items: [
         { label: 'Canadian Cities', href: '/canada', meta: 'CA' },

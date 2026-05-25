@@ -31,7 +31,15 @@
           { label: 'Work-Life Balance',                href: '/work-life-balance' },
           { label: 'Sexlessness & Intimacy',           href: '/sexlessness-and-intimacy' },
           { label: 'Infidelity & Sexual Compulsion',   href: '/infidelity-and-sexual-compulsion' },
-          { label: 'Porn & Other Addictions',          href: '/porn-and-other-addictions' },
+          { label: 'Porn & Recovery',                   href: '/porn-and-other-addictions' },
+        ],
+      },
+      {
+        heading: 'Programs',
+        links: [
+          { label: 'Porn Recovery Therapy',            href: '/porn-addiction-therapy' },
+          { label: 'Gambling Recovery Therapy',        href: '/gambling-addiction-therapy' },
+          { label: 'Porn Recovery Group',              href: '/porn-recovery-group' },
         ],
       },
     ],
@@ -67,14 +75,14 @@
               <img src="${FOOTER.logo.src}" alt="${FOOTER.logo.alt}">
             </a>
             <p>${FOOTER.blurb}</p>
+            <div class="footer-contact-inline">
+              <h5>${FOOTER.contact.heading}</h5>
+              <div class="addr">${FOOTER.contact.address}</div>
+              <div class="meta">${FOOTER.contact.meta}</div>
+              <a class="email" href="mailto:${FOOTER.contact.email}">${FOOTER.contact.email}</a>
+            </div>
           </div>
           ${colsHtml}
-          <div class="footer-col footer-contact">
-            <h5>${FOOTER.contact.heading}</h5>
-            <div class="addr">${FOOTER.contact.address}</div>
-            <div class="meta">${FOOTER.contact.meta}</div>
-            <a class="email" href="mailto:${FOOTER.contact.email}">${FOOTER.contact.email}</a>
-          </div>
         </div>
         <div class="footer-bottom">
           <div>${FOOTER.legal}</div>

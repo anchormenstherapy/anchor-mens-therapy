@@ -212,8 +212,8 @@
   nav.primary > a,
   nav.primary > .nav-item > .nav-trigger {
     font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 700;
     text-decoration: none;
     color: rgba(246, 244, 227, 0.88);
     letter-spacing: 0.005em;
@@ -1238,6 +1238,42 @@
     transition: color .2s;
   }
   .footer-col a:hover { color: var(--accent); }
+  .footer-contact-inline {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(246, 244, 227, 0.12);
+  }
+  .footer-contact-inline h5 {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-soft);
+    margin: 0 0 14px;
+  }
+  .footer-contact-inline .addr {
+    font-size: 13.5px;
+    line-height: 1.75;
+    margin-bottom: 14px;
+    color: rgba(246, 244, 227, 0.72);
+  }
+  .footer-contact-inline .meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .footer-contact-inline .email {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--cream-soft);
+    text-decoration: none;
+    display: block;
+  }
   .footer-contact .addr {
     font-size: 13.5px;
     line-height: 1.75;

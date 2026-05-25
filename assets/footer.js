@@ -15,6 +15,15 @@
         links: [
           { label: 'Home',                             href: '/' },
           { label: 'About',                            href: '/jordan-j-caron' },
+          { label: 'Canadian Cities',                  href: '/canada' },
+          { label: 'USA Cities',                       href: '/usa' },
+          { label: 'Blog',                             href: '/blog' },
+          { label: 'Book a Consultation',              href: '/book-consultation' },
+        ],
+      },
+      {
+        heading: 'Issues',
+        links: [
           { label: 'Dating & Marriage',                href: '/dating-and-marriage' },
           { label: 'Break Up & Divorce',               href: '/break-up-and-divorce' },
           { label: 'Fatherhood',                       href: '/fatherhood' },
@@ -23,20 +32,6 @@
           { label: 'Sexlessness & Intimacy',           href: '/sexlessness-and-intimacy' },
           { label: 'Infidelity & Sexual Compulsion',   href: '/infidelity-and-sexual-compulsion' },
           { label: 'Porn & Other Addictions',          href: '/porn-and-other-addictions' },
-          { label: 'Canadian Cities',                  href: '/canada' },
-          { label: 'USA Cities',                       href: '/usa' },
-          { label: 'Blog',                             href: '/blog' },
-          { label: 'Book a Consultation',              href: '/book-consultation' },
-        ],
-      },
-      {
-        heading: 'Resources',
-        links: [
-          { label: 'Dating & Marriage',                href: '/dating-and-marriage' },
-          { label: 'Break Up & Divorce',               href: '/break-up-and-divorce' },
-          { label: 'Fatherhood',                       href: '/fatherhood' },
-          { label: 'Trauma & Stress',                  href: '/trauma-and-stress' },
-          { label: 'Work-Life Balance',                href: '/work-life-balance' },
         ],
       },
     ],

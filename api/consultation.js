@@ -30,7 +30,7 @@ module.exports = async function handler(req, res) {
     await resend.emails.send({
       from: 'Anchor Men\'s Therapy <noreply@anchormenstherapy.com>',
       to: 'info@anchormenstherapy.com',
-      subject: `New Consultation Request from ${name}`,
+      subject: `Anchor Men's Therapy Inquiry from ${name}`,
       replyTo: email,
       html: `
         <h2>New Consultation Request</h2>
